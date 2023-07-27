@@ -1,7 +1,6 @@
 # XHealth
 
 ## 📖 Index
-
 - [About](#about-it)
 - [Features](#features)
 - [Used Techs](#used-techs)
@@ -14,7 +13,7 @@ This project's goal is to build a website for a gym, based on an authoral Figma 
 ## 🎈 Features <a name = "features"></a>
 The project is based on a Single-Page-Application/SPA for the gym's services. It uses Angular-Router for better performance and usage of the website's potential.
 
-## ⛏ Used techs <a name = "used-techs"></a>
+## ⛏ Used Techs <a name = "used-techs"></a>
 - [Angular](https://angular.io/)
 - [NodeJS](https://nodejs.org/)
 - [Prettier](https://www.npmjs.com/package/prettier)
