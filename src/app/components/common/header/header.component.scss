@@ -1,0 +1,105 @@
+@import '../../../../styles.scss';
+
+.navigation {
+    background-color: $dg;
+    border-radius: 20px;
+    height: 60px;
+    filter: drop-shadow(0px 1px $xy);
+    padding: 0px 40px;
+}
+
+.navbar-brand   {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    transition: 0.3s;
+
+    &:hover {
+        filter: brightness(140%);
+    }
+
+}
+
+.navbar-nav {
+    gap: 9%;
+}
+
+.navImage   {
+    width: 78px;
+}
+
+.nav-link   {
+    color: $ly;
+    font-family: $qs;
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: 0.3s;
+    &:hover {
+        color: $xy;
+    }
+}
+
+.loginButton    {
+    border: 2px solid $xy;
+    border-radius: 20px;
+    color: $xy;
+    font-family: $qs;
+    padding: 2px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
+
+    p   {
+        margin: 0;
+    }
+}
+
+.userData   {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.6s;
+
+    &:hover {
+        filter: brightness(330%);
+    }
+
+    p   {
+        color: $xy;
+        font-family: $qs;
+        font-size: 18px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+#nav-button {
+    background-color: $xy;
+}
+
+@media  (max-width: 1118px) {
+    .navbar-nav {
+        gap: 5%;
+    }
+}
+
+@media  (max-width: 991px)  {
+    .navImage   {
+        margin: 0;
+        padding: 0;
+        width: 45px;
+    }
+}
+
+@media  (min-width: 768px)  {
+    .navbar-collapse    {
+        padding-left: 25px;
+    }
+}

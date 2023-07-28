@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { NgxSplideModule } from 'ngx-splide';
 
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
@@ -11,12 +12,32 @@ import { CoachesComponent } from './views/coaches/coaches.component';
 import { MembershipsComponent } from './views/memberships/memberships.component';
 import { TestimoniesComponent } from './views/testimonies/testimonies.component';
 import { FaqComponent } from './views/faq/faq.component';
-import { SignComponent } from './views/sign/sign.component'
+import { SignComponent } from './views/sign/sign.component';
+import { RegisterComponent } from './views/sign/register/register.component';
+import { LoginComponent } from './views/sign/login/login.component';
+import { StudentComponent } from './views/student/student.component'
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent, FooterComponent, IndexComponent, ClassesComponent, CoachesComponent, MembershipsComponent, TestimoniesComponent, FaqComponent, SignComponent],
-    imports: [BrowserModule, AppRoutingModule],
+    declarations: [
+        AppComponent, 
+        HeaderComponent, 
+        FooterComponent, 
+        IndexComponent, 
+        ClassesComponent, 
+        CoachesComponent, 
+        MembershipsComponent, 
+        TestimoniesComponent, 
+        FaqComponent, 
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent
+    ],
+
+    imports: [
+        BrowserModule, 
+        AppRoutingModule, 
+        NgxSplideModule 
+    ],
     providers: [],
+    
     bootstrap: [AppComponent]
 })
 export class AppModule {}

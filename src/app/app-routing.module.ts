@@ -10,12 +10,12 @@ import { SignComponent } from './views/sign/sign.component'
 
 const routes: Routes = [
     { path: '', component: IndexComponent },
-    { path: '/classes', component: ClassesComponent },
-    { path: '/coaches', component: CoachesComponent },
-    { path: '/memberships', component: MembershipsComponent },
-    { path: '/testimonies', component: TestimoniesComponent },
-    { path: '/faq', component: FaqComponent },
-    { path: '/sign', component: SignComponent }
+    { path: 'classes', component: ClassesComponent },
+    { path: 'coaches', component: CoachesComponent },
+    { path: 'memberships', component: MembershipsComponent },
+    { path: 'testimonies', component: TestimoniesComponent },
+    { path: 'faq', component: FaqComponent },
+    { path: 'sign', component: SignComponent }
 ]
 
 @NgModule({
