@@ -15,7 +15,9 @@ import { FaqComponent } from './views/faq/faq.component';
 import { SignComponent } from './views/sign/sign.component';
 import { RegisterComponent } from './views/sign/register/register.component';
 import { LoginComponent } from './views/sign/login/login.component';
-import { StudentComponent } from './views/student/student.component'
+import { StudentComponent } from './views/student/student.component';
+import { PrivacyComponent } from './views/privacy/privacy.component';
+import { TermsComponent } from './views/terms/terms.component'
 
 @NgModule({
     declarations: [
@@ -28,7 +30,7 @@ import { StudentComponent } from './views/student/student.component'
         MembershipsComponent, 
         TestimoniesComponent, 
         FaqComponent, 
-        SignComponent, RegisterComponent, LoginComponent, StudentComponent
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent
     ],
 
     imports: [

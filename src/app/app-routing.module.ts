@@ -7,6 +7,8 @@ import { MembershipsComponent } from './views/memberships/memberships.component'
 import { TestimoniesComponent } from './views/testimonies/testimonies.component'
 import { FaqComponent } from './views/faq/faq.component'
 import { SignComponent } from './views/sign/sign.component'
+import { TermsComponent } from './views/terms/terms.component'
+import { PrivacyComponent } from './views/privacy/privacy.component'
 
 const routes: Routes = [
     { path: '', component: IndexComponent },
@@ -15,7 +17,9 @@ const routes: Routes = [
     { path: 'memberships', component: MembershipsComponent },
     { path: 'testimonies', component: TestimoniesComponent },
     { path: 'faq', component: FaqComponent },
-    { path: 'sign', component: SignComponent }
+    { path: 'sign', component: SignComponent },
+    { path: 'terms', component: TermsComponent },
+    { path: 'privacy', component: PrivacyComponent}
 ]
 
 @NgModule({

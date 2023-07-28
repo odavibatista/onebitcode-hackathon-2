@@ -1,0 +1,69 @@
+@import '../../../../styles.scss';
+
+.footer {
+    border-top: 2px solid $xy;
+    display: flex;
+    font-family: $qs;
+    font-weight: bold;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: -10px;
+
+    p   {
+        color: $ly;
+        font-size: 10px;
+    }
+}
+
+.footerDivs {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerIcons    {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footerIcon {
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+        filter: brightness(280%);
+    }
+}
+
+.footerLink {
+    color: $xy;
+    font-size: 18px;
+    text-decoration: none;
+
+    transition: 0.3s;
+
+    &:hover {
+        filter: brightness(220%);
+    }
+}
+
+.footerLogo {
+    width: 78px;
+}
+
+@media  (max-width: 768px)  {
+    .footer {
+        p   {
+            text-align: center;
+        }
+    }
+    
+    .footerDivs {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 10px;
+    }
+}

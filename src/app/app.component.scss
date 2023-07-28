@@ -5,6 +5,10 @@
     padding: 18px 0px;
 }
 
+.container  {
+    padding: 0px;
+}
+
 @media  (max-width: 1366px) {
     .main-container {
         padding: 18px 8%;
@@ -13,6 +17,6 @@
 
 @media  (max-width: 991px)  {
     .main-container {
-        padding: 10px 40px;
+        padding: 10px 30px;
     }
 }

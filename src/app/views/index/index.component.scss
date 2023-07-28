@@ -1,0 +1,84 @@
+@import '../../../styles.scss';
+
+.section    {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 0px;
+    width: 100%;
+}
+
+.heroInformations   {
+    color: $xy;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    z-index: 10;
+
+
+    h1  {
+        border-bottom: 10px solid $xy;
+        font-family: $ms;
+        font-size: 64px;
+        padding-bottom: 25px;
+    }
+
+    p   {
+        font-family: $rw;
+        font-size: 24px;
+    }
+
+    a   {
+        border: 2px solid $xy;
+        border-radius: 25px;
+        color: $xy;
+        display: flex;
+        font-weight: bold;
+        padding: 8px 20px 8px 25px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 170px;
+
+        transition: 0.3s;
+        &:hover {
+            border-color: $ly;
+            color: $ly;
+        }
+    }
+}
+
+
+@media  (max-width: 1199px) {
+    .heroInformations   {
+        h1  {
+            font-size: 56px;
+        }
+    }
+}
+
+@media  (max-width: 1087px) {
+    .heroInformations   {
+        h1  {
+            font-size: 48px;
+        }
+    }
+}
+
+@media  (max-width: 991px) {
+    .section    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 0px;
+    }
+
+    .heroInformations   {
+        h1  {
+            border: none;
+            font-size: 36px;
+        }
+    }
+}
