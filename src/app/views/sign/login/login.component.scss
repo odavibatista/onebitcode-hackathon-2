@@ -1,0 +1,48 @@
+@import '../../../../styles.scss';
+
+.login  {
+    background-color: $dg;
+    display: flex;
+    height: 461px;
+    width: 576px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 1.25rem;
+  margin-bottom: .5rem;
+}
+input {
+  border: 0;
+  border-radius: .25rem;
+  font-size: 1rem;
+  padding: .5rem;
+}
+span {
+  color: #f64348;
+  font-size: .75rem;
+  margin: .25rem;
+}
+button {
+  background-color: #43a5f6;
+  border: 0;
+  border-radius: .25rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: .5rem 0;
+  text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+.error {
+  border: 1px solid #f64348;
+}
+.success {
+  border: 1px solid #43f67f;
+}

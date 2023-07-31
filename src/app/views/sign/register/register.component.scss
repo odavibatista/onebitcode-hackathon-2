@@ -1,0 +1,161 @@
+@import '../../../../styles.scss';
+
+.register  {
+    background-color: $dg;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    min-height: 461px;
+    justify-content: space-between;
+    padding: 24px 52px 0px 24px;
+    width: 100%;
+}
+
+#registerForm  {
+  display: flex;
+  flex-direction: column;
+  width: 366px;
+}
+
+h1  {
+  color: $xy;
+  font-family: $rw;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  color: $ly;
+  font-family: $qs;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.errorLabels  {
+  height: 20px;
+}
+
+input {
+  background-color: $lg;
+  border: none;
+  border-radius: 10px;
+  color: $ly;
+  height: 54px;
+  margin-bottom: 0px;
+  outline: none;
+  padding: 5px 15px;
+}
+
+#password-error {
+  margin-bottom: 20px;
+}
+
+span, button  {
+  color: $xy;
+  font-family: $rw;
+}
+
+button  {
+  align-self: center;
+  background: transparent;
+  border: 2px solid $xy;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  height: 29px;
+  transition: 0.3s;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 168px;
+
+  &:hover {
+    border-color: $ly;
+    color: $ly;
+  }
+}
+
+p {
+  align-self: center;
+  color: $ly;
+  font-family: $qs;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.linker {
+  color: $xy;
+  text-decoration: none;
+}
+
+img {
+  align-self: center;
+  height: 330px;
+  margin-left: 10px;
+  width: 50px;
+}
+
+.error {
+  border: 1px solid #f64348;
+}
+
+.success {
+  border: 1px solid #43f67f;
+}
+
+
+@media  (max-width: 991px)  {
+  .register {
+    width: 100%;
+  }
+  
+  #registerForm    {
+    width: 100%;
+  }
+}
+
+@media  (max-width: 768px)  {
+  h1  {
+    font-size: 24px;
+  }
+
+  img{
+    display: none;
+  }
+  
+  input {
+    height: 40px;
+    width: 100%;
+  }
+
+}
+
+@media  (max-width: 425px)  {
+  .register  {
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+
+  }
+
+  #registerForm {
+    justify-content: center;
+    padding: 0;
+  }
+    h1  {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    label {
+      font-size: 12px;
+    }
+    
+    input {
+      height: 30px;
+    }
+}

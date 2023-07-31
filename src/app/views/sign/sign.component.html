@@ -1,1 +1,13 @@
-<p>sign works!</p>
+<section class="section">
+    <div class="news">
+        <h1>Novidades do mês!</h1>
+        <span *ngFor="let new of news">
+            <img src="/assets/sign/arrow-right.svg" alt="arrow-right">
+            <p>{{new}}</p>
+        </span>
+        <div>
+            <img src="/assets/xhealth.png" alt="xhealth-logo" class="newsLogo">
+        </div>
+    </div>
+    <app-register></app-register>
+</section>

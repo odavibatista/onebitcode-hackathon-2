@@ -1,0 +1,92 @@
+@import '../../../styles.scss';
+
+.section    {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 74px 0px;
+}
+
+.news   {
+    align-items: center;
+    background-color: $dg;
+    border-radius: 15px;
+    color: $xy;
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    min-height: 490px;
+    padding: 19px 0px;
+    width: 40%;
+
+    div {
+        border-top: 2px solid $xy;
+        display: grid;
+        place-content: center;
+        width: 90%;
+    }
+
+}
+h1  {
+    font-family: $rw;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+span    {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    width: 90%;
+
+    p   {
+        font-family: $qs;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.newsLogo {
+    width: 70px;
+}
+
+@media  (max-width: 991px)  {
+    .section    {
+        flex-direction: column;
+        gap: 30px;
+
+        :nth-child(n + 2), :nth-child(n + 3) {
+            width: 100%;
+        }
+    }
+
+    .news   {
+        padding: 19px 20px 0px 20px;
+        width: 100%;
+    }
+}
+
+@media  (max-width: 425px)  {
+    h1  {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    p  {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    span    {
+        img {
+            display: none;
+        }
+    }
+
+
+    span    {
+        text-align: center;
+    }
+}
