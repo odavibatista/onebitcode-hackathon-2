@@ -16,8 +16,7 @@
     display: flex;
     gap: 45px;
     flex-direction: column;
-    min-height: 490px;
-    padding: 19px 0px;
+    padding: 30px 0px;
     width: 40%;
 
     div {
@@ -52,6 +51,14 @@ span    {
     width: 70px;
 }
 
+.forms  {
+    width: 50%;
+
+    *   {
+        transition: 0.2s;
+    }
+}
+
 @media  (max-width: 991px)  {
     .section    {
         flex-direction: column;
@@ -69,6 +76,9 @@ span    {
 }
 
 @media  (max-width: 425px)  {
+    .news   {
+        gap: 20px;
+    }
     h1  {
         font-size: 24px;
         text-align: center;

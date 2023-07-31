@@ -1,20 +1,22 @@
 @import '../../../../styles.scss';
 
-.register  {
+#register  {
     background-color: $dg;
     border-radius: 15px;
-    display: flex;
+    display: none;
     flex-direction: row;
     min-height: 461px;
     justify-content: space-between;
-    padding: 24px 52px 0px 24px;
+    justify-self: flex-end;
+    margin: 0;
+    padding: 24px 52px 8px 24px;
     width: 100%;
 }
 
 #registerForm  {
   display: flex;
   flex-direction: column;
-  width: 366px;
+  width: 100%;
 }
 
 h1  {
@@ -34,6 +36,7 @@ label {
 }
 
 .errorLabels  {
+  font-size: 11px;
   height: 20px;
 }
 
@@ -42,14 +45,16 @@ input {
   border: none;
   border-radius: 10px;
   color: $ly;
-  height: 54px;
+  height: 49px;
   margin-bottom: 0px;
   outline: none;
   padding: 5px 15px;
+  width: 100%;
 }
 
 #password-error {
   margin-bottom: 20px;
+  height: 30px;
 }
 
 span, button  {
@@ -87,10 +92,6 @@ p {
   text-align: center;
 }
 
-.linker {
-  color: $xy;
-  text-decoration: none;
-}
 
 img {
   align-self: center;
@@ -109,7 +110,7 @@ img {
 
 
 @media  (max-width: 991px)  {
-  .register {
+  #register  {
     width: 100%;
   }
   
@@ -135,7 +136,7 @@ img {
 }
 
 @media  (max-width: 425px)  {
-  .register  {
+  #register   {
     align-items: center;
     justify-content: center;
     padding: 5px 20px;

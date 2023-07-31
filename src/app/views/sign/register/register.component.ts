@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  changeToLogin  ()  {
+    //@ts-ignore
+    document.querySelector('#register').style.display = 'none'
+    //@ts-ignore
+    document.querySelector('#login').style.display = 'flex'
+  }
+
 
   ngOnInit(): void {
     function validateName(name: any){

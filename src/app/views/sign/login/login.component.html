@@ -1,3 +1,24 @@
-<div class="login">
-
+<div id="login">
+    <form id="loginForm">
+        <h1>Bem-vindo (a) de volta!</h1>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <span id="email-login-error" class="errorLabels"></span>
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password">
+            <a id="recovery">Esqueceu sua senha?</a>
+            <span id="password-login-error" class="errorLabels"></span>
+        </div>
+        <button type="submit">Login</button>
+        <p>
+            Ainda não é membro?
+            <br>
+            Registre-se <a class="linker" (click)="(changeToRegister())">aqui</a>!
+            
+        </p>
+    </form>
+    <img src="/assets/sign/decoration.png" alt="">
 </div>
