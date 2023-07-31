@@ -2,7 +2,7 @@
 
 .main-container {
     background-color: $dark;
-    padding: 18px 0px;
+    padding: 28px 10px;
 }
 
 .container  {
@@ -17,6 +17,6 @@
 
 @media  (max-width: 991px)  {
     .main-container {
-        padding: 10px 30px;
+        padding: 10px 20px;
     }
 }

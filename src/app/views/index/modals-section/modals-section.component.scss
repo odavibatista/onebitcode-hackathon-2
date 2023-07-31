@@ -1,33 +1,29 @@
-@import '../../../styles.scss';
+@import '../../../../styles.scss';
 
-.section    {
+.modalsSection  {
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 120px 0px;
-    width: 100%;
-}
-
-.heroInformations   {
     color: $xy;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: space-evenly;
-    z-index: 10;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 80px 0px;
+    text-align: center;
 
 
     h1  {
-        border-bottom: 10px solid $xy;
+        border-bottom: 7px solid $xy;
         font-family: $ms;
         font-size: 64px;
-        padding-bottom: 25px;
+        font-weight: bold;
+        padding-bottom: 12px;
+        width: 95%;
     }
 
     p   {
-        font-family: $rw;
-        font-size: 24px;
+        font-size: 30px;
+        font-family: $qs;
     }
 
     a   {
@@ -35,11 +31,10 @@
         border-radius: 25px;
         display: flex;
         font-weight: bold;
-        padding: 8px 20px 8px 25px;
-        text-align: center;
+        padding: 8px 20px;
         text-decoration: none;
         text-transform: uppercase;
-        width: 170px;
+        width: 125px;
 
         transition: 0.3s;
         &:hover {
@@ -49,11 +44,22 @@
     }
 }
 
+.modals {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-
+.splide {
+    align-items: center;
+    display: none;
+    padding: 20px 0px;
+    width: 100%;
+}
 
 @media  (max-width: 1199px) {
-    .heroInformations, .modalsSection    {
+    .modalsSection    {
         h1  {
             font-size: 56px;
         }
@@ -61,7 +67,7 @@
 }
 
 @media  (max-width: 1087px) {
-    .heroInformations, .modalsSection    {
+    .modalsSection    {
         h1  {
             font-size: 48px;
         }
@@ -69,14 +75,7 @@
 }
 
 @media  (max-width: 991px) {
-    .section    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 80px 0px;
-    }
-
-    .heroInformations, .modalsSection    {
+    .modalsSection    {
         h1  {
             border: none;
             font-size: 36px;
@@ -93,11 +92,7 @@
 }
 
 @media  (max-width: 768px)  {
-    .section    {
-        padding: 60px 0px;
-    }
-
-    .section, .heroInformations, .modalsSection   {
+    .modalsSection   {
         align-items: center;
         flex-direction: column;
         gap: 20px;
@@ -105,15 +100,7 @@
         justify-content: center;
     }
 
-    .heroImage  {
-        img {
-            margin-top: 40px;
-            width: 60%;
-        }
-    }
-
     .modals {
         display: none;
     }
-
 }

@@ -1,0 +1,43 @@
+<section  class="modalsSection">
+    <h1>Exercícios que impulsionam</h1>
+    <p>Modalidades distintas, que formam você e seu físico para brilhar no esporte.</p>
+    <div class="modals">
+        <app-modals *ngFor="let modal of modals" [modal]="modal"></app-modals>
+    </div>
+    <div class="splide">
+        <splide 
+        [options]="{
+            perMove: 2, 
+            perPage: 3,
+            height: 330,
+            gap: 35,
+            arrows: true, 
+            pagination: false,
+            padding: '4%',
+            breakpoints: {
+                '768':  {
+                    perPage: 2,
+                    padding: '8%',
+                    gap: 100
+                },
+                '565':  {
+                    arrows: false,
+                    perPage: 1,
+                    padding: '25%',
+                    gap: 300,
+                }
+            }
+        }"
+        style="width: 100%; cursor: pointer; align-items: center; justify-content: center;
+        @media(max-width: 1024px) {
+        width: 100%;
+        }">
+            <splide-slide *ngFor="let mode of modals">
+                <app-modals [modal]="mode"></app-modals>
+            </splide-slide>
+        </splide>
+    </div>
+    <a routerLink="/classes">
+        Ver mais!
+    </a>
+</section>

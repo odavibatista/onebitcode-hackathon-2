@@ -1,0 +1,46 @@
+@import '../../../../styles.scss';
+
+.modalDiv   {
+    border: 2px solid $xy;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    max-width: 250px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: $ly;
+
+        .modalName  {
+            color: $ly;
+        }
+
+        .modalDesc  {
+            color: $ly;
+        }
+    }
+}
+
+.modalImg   {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modalName  {
+    color: $xy;
+    font-family: $rw;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.modalDesc  {
+    color: $xy;
+    font-family: $rw;
+    font-size: 14px;
+    max-width: 250px;
+    padding: 0px 10px;
+    transition: 0.3s;
+}

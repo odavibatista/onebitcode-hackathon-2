@@ -9,6 +9,7 @@ import { FaqComponent } from './views/faq/faq.component'
 import { SignComponent } from './views/sign/sign.component'
 import { TermsComponent } from './views/terms/terms.component'
 import { PrivacyComponent } from './views/privacy/privacy.component'
+import { StudentComponent } from './views/student/student.component'
 
 const routes: Routes = [
     { path: '', component: IndexComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
     { path: 'faq', component: FaqComponent },
     { path: 'sign', component: SignComponent },
     { path: 'terms', component: TermsComponent },
-    { path: 'privacy', component: PrivacyComponent}
+    { path: 'privacy', component: PrivacyComponent },
+    { path: 'student', component: StudentComponent }
 ]
 
 @NgModule({

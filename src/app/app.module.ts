@@ -17,7 +17,9 @@ import { RegisterComponent } from './views/sign/register/register.component';
 import { LoginComponent } from './views/sign/login/login.component';
 import { StudentComponent } from './views/student/student.component';
 import { PrivacyComponent } from './views/privacy/privacy.component';
-import { TermsComponent } from './views/terms/terms.component'
+import { TermsComponent } from './views/terms/terms.component';
+import { ModalsComponent } from './views/index/modals/modals.component';
+import { ModalsSectionComponent } from './views/index/modals-section/modals-section.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +32,7 @@ import { TermsComponent } from './views/terms/terms.component'
         MembershipsComponent, 
         TestimoniesComponent, 
         FaqComponent, 
-        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent
     ],
 
     imports: [
