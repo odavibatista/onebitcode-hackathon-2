@@ -23,7 +23,7 @@
 }
 
 .navbar-nav {
-    gap: 20%;
+    gap: 16%;
 }
 
 .navImage   {
@@ -54,7 +54,7 @@
     place-content: center;
     text-decoration: none;
     transition: 0.3s;
-    width: 80px;
+    width: 90px;
 
     &:hover {
         border-color: $ly;
@@ -73,7 +73,7 @@
 .userData   {
     align-items: center;
     display: flex;
-    gap: 10px;
+    gap: 2px;
     justify-content: center;
     text-decoration: none;
     transition: 0.6s;
@@ -81,14 +81,15 @@
     &:hover {
         filter: brightness(330%);
     }
+}
 
-    p   {
-        color: $xy;
-        font-family: $qs;
-        font-size: 18px;
-        margin: 0;
-        text-transform: uppercase;
-    }
+.nameText   {
+    color: $xy;
+    font-family: $qs;
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    width: 80px;
 }
 
 #nav-button {
@@ -98,7 +99,11 @@
 
 @media  (max-width: 1366px) {
     .navbar-nav {
-        gap: 10%;
+        gap: 13%;
+    }
+    
+    .nav-link   {
+        font-size: 16px;
     }
 }
 

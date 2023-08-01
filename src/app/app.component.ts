@@ -24,11 +24,8 @@ export class AppComponent {
     ngOnInit(): void {
     const    isLoggedIn: boolean = false
 
-    /* Testing the localstorage */
-        localStorage.setItem('isLoggedIn', JSON.stringify(isLoggedIn))
-
-        if(localStorage.getItem('localStorageData') === null)   {
-            localStorage.setItem("localStorageData", JSON.stringify(isLoggedIn))
+        if(localStorage.getItem('isLoggedIn') === null)   {
+            localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn))
         }
 
     }

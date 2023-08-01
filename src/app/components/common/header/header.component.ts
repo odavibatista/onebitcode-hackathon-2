@@ -6,18 +6,14 @@ import { Component } from '@angular/core'
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-    currentlyLogged = localStorage.getItem('localStorageData')
+    //@ts-ignore
+    currentlyLogged = JSON.parse(localStorage.getItem('isLoggedIn'))
+    //@ts-ignore
+    userName = JSON.parse(localStorage.getItem('registeredUser'))?.name
 
 
     isLoggedIn: boolean = false
 
-    setCredentials () {
-        localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn))
-
-        if(localStorage.getItem('localStorageData') === null)   {
-            localStorage.setItem("localStorageData", JSON.stringify(this.isLoggedIn))
-        }
-    }
 
     adjustNavbarOnResolution() {
         const threshold = 991

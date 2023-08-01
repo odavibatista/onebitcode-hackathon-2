@@ -10,7 +10,6 @@ body    {
 
 .main-container {
     background-color: $dark;
-    padding: 28px 40px;
 }
 
 main    {
@@ -29,6 +28,12 @@ main    {
 
     &:hover {
         background-color: $ly;
+    }
+}
+
+@media  (min-width: 1367px) {
+    .main-container {
+        padding: 18px 5.5%;
     }
 }
 

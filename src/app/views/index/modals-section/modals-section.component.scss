@@ -10,37 +10,38 @@
     justify-content: center;
     padding: 80px 0px;
     text-align: center;
+}
 
+h1  {
+    border-bottom: 7px solid $xy;
+    font-family: $ms;
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 12px;
+    width: 95%;
+}
 
-    h1  {
-        border-bottom: 7px solid $xy;
-        font-family: $ms;
-        font-size: 64px;
-        font-weight: bold;
-        padding-bottom: 12px;
-        width: 95%;
-    }
+p   {
+    font-size: 30px;
+    font-family: $qs;
+}
 
-    p   {
-        font-size: 30px;
-        font-family: $qs;
-    }
+a   {
+    border: 2px solid $xy;
+    border-radius: 25px;
+    display: grid;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+    place-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
 
-    a   {
-        border: 2px solid $xy;
-        border-radius: 25px;
-        display: flex;
-        font-weight: bold;
-        padding: 8px 20px;
-        text-decoration: none;
-        text-transform: uppercase;
-        width: 125px;
-
-        transition: 0.3s;
-        &:hover {
-            border-color: $ly;
-            color: $ly;
-        }
+    transition: 0.3s;
+    &:hover {
+        border-color: $ly;
+        color: $ly;
     }
 }
 
@@ -57,6 +58,15 @@
     padding: 20px 0px;
     width: 100%;
 }
+
+
+@media  (max-width: 1366px) {
+    a   {
+        font-size: 16px;
+        width: 125px;
+    }
+}
+
 
 @media  (max-width: 1199px) {
     .modalsSection    {

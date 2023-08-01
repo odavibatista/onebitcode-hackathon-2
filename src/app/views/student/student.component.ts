@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./student.component.scss']
 })
 export class StudentComponent {
+  //@ts-ignore
+  userName = JSON.parse(localStorage.getItem('registeredUser'))?.name
   ngOnInit(): void  {
     //@ts-ignore
     if(JSON.parse(localStorage.getItem('isLoggedIn')) === true) {

@@ -16,40 +16,55 @@
     gap: 20px;
     justify-content: space-evenly;
     z-index: 10;
+}
 
+a   {
+    border: 2px solid $xy;
+    border-radius: 25px;
+    display: grid;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 0px;
+    place-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 250px;
 
-    h1  {
-        border-bottom: 10px solid $xy;
-        font-family: $ms;
-        font-size: 64px;
-        font-weight: bold;
-        padding-bottom: 25px;
-    }
-
-    p   {
-        font-family: $rw;
-        font-size: 24px;
-    }
-
-    a   {
-        border: 2px solid $xy;
-        border-radius: 25px;
-        display: flex;
-        font-weight: bold;
-        padding: 8px 20px 8px 25px;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        width: 170px;
-
-        transition: 0.3s;
-        &:hover {
-            border-color: $ly;
-            color: $ly;
-        }
+    transition: 0.3s;
+    &:hover {
+        border-color: $ly;
+        color: $ly;
     }
 }
 
+.title  {
+    border-bottom: 10px solid $xy;
+    font-family: $ms;
+    font-size: 72px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.description   {
+    font-family: $rw;
+    font-size: 28px;
+}
+
+@media  (max-width: 1366px) {
+    .title  {
+        font-size: 64px;
+    }
+
+    .description   {
+        font-size: 24px;
+    }
+
+
+    a   {
+        font-size: 16px;
+        width: 170px;
+    }
+}
 
 
 

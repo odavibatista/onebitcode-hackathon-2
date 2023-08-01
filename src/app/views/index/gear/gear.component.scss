@@ -6,35 +6,37 @@ section {
     flex-direction: row;
     justify-content: space-between;
     padding: 120px 0px;
+}
 
-    div {
-        color: $xy;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+div {
+    color: $xy;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
-        h1  {
-            font-family: $ms;
-            font-weight: 700;
-        }
+h1  {
+    font-family: $ms;
+    font-size: 70px;
+    font-weight: 700;
+}
 
-        a   {
-            border: 2px solid $xy;
-            border-radius: 25px;
-            display: flex;
-            font-weight: bold;
-            padding: 8px 20px 8px 25px;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            width: 135px;
-    
-            transition: 0.3s;
-            &:hover {
-                border-color: $ly;
-                color: $ly;
-            }
-        }
+a   {
+    border: 2px solid $xy;
+    border-radius: 25px;
+    display: grid;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 0px;
+    place-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 170px;
+
+    transition: 0.3s;
+    &:hover {
+        border-color: $ly;
+        color: $ly;
     }
 }
 
@@ -46,6 +48,17 @@ img {
 .gearDescription   {
     font-family: $rw;
     font-size: 24px;
+}
+
+@media  (max-width: 1366px) {
+    h1  {
+        font-size: 64px;
+    }
+
+    a   {
+        font-size: 16px;
+        width: 135px;
+    }
 }
 
 @media  (max-width: 1200px) {

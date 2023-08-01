@@ -64,8 +64,10 @@ export class RegisterComponent {
     const registerForm: any = document.getElementById('registerForm')
 
     registerForm.addEventListener('submit', (ev: any) => {
+
         ev.preventDefault()
         resetFormStyles()
+
         try {
             validateName(userInputs.name.value)
             userInputs.name.classList.add('success')
@@ -73,11 +75,25 @@ export class RegisterComponent {
             userInputs.email.classList.add('success')
             validatePassword(userInputs.password.value)
             userInputs.password.classList.add('success')
+
+            const date = new Date()
+
+            const userInfo = {
+              name: userInputs.name.value,
+              email: userInputs.email.value,
+              password: userInputs.password.value,
+              memberSince: `${date.getDate()}/${date.getUTCMonth()+1}/${date.getFullYear()}`,
+            }
+  
+            localStorage.setItem('registeredUser', JSON.stringify(userInfo))
+            localStorage.setItem('isLoggedIn', JSON.stringify(true))
+            window.location.replace("/")
         } catch (err: any) {
             userInputs[err.input].classList.add('error')
             //@ts-ignore
             document.querySelector(`#${err.input}-error`).textContent = err.message
         }
+
     })
   }
 }

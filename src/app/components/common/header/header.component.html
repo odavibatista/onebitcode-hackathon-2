@@ -22,15 +22,17 @@
             <li class="nav-item">
                 <a routerLink="/contact" class="nav-link" (click)="(adjustNavbarOnResolution())">Contato</a>
             </li>
-            <li class="nav-item" *ngIf="currentlyLogged === null" style="justify-self: flex-end;" id="loginButton">
+            <li class="nav-item" *ngIf="currentlyLogged === false" id="loginButton">
                 <a routerLink="/sign" class="loginButton nav-link" (click)="(adjustNavbarOnResolution())">
                     <p>Entrar</p>
                 </a>
             </li>
-            <li class="nav-item" *ngIf="currentlyLogged !== null">
+            <li class="nav-item" *ngIf="currentlyLogged !== false">
                 <a routerLink="/student" class="userData nav-link" (click)="(adjustNavbarOnResolution())">
-                    <img src="/assets/user.svg" alt="">
-                    <p>Name</p>
+                    <img src="/assets/user.svg" alt="user-icon">
+                    <p class="nameText">
+                        {{userName}}
+                    </p>
                 </a>
             </li>
         </ul>
