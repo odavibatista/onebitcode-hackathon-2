@@ -6,8 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./student.component.scss']
 })
 export class StudentComponent {
-  //@ts-ignore
-  userName = JSON.parse(localStorage.getItem('registeredUser'))?.name
+  
+  userData = {
+    //@ts-ignore
+    name: JSON.parse(localStorage.getItem('registeredUser'))?.name,
+    //@ts-ignore
+    email: JSON.parse(localStorage.getItem('registeredUser'))?.email,
+    //@ts-ignore
+    membership: JSON.parse(localStorage.getItem('registeredUser'))?.membership,
+    //@ts-ignore
+    memberSince: JSON.parse(localStorage.getItem('registeredUser'))?.memberSince,
+  }
+
+  debts = [
+    {
+      title: "Taxa de Inscrição",
+      value: 19.99
+    },
+
+    {
+      title: "Mensalidade - Agosto",
+      value: 49.99
+    },
+  ]
+
+  totalDebt = this.debts.reduce((acc, obj) => acc + obj.value, 0);
+
   ngOnInit(): void  {
     //@ts-ignore
     if(JSON.parse(localStorage.getItem('isLoggedIn')) === true) {

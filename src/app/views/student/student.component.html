@@ -1,4 +1,22 @@
 <section>
-    <h1>Olá, {{userName}}!</h1>
-    
+    <h1>Olá, <strong>{{userData.name}}</strong>!</h1>
+    <div class="userData">
+        <h2>Informações</h2>
+    </div>
+    <h6>Meus benefícios:</h6>
+    <div class="debts">
+        <h3>Pagamentos pendentes</h3>
+        <div class="payments">
+            <span class="debt" *ngFor="let debt of debts">
+                <p>
+                    {{debt.title}}
+                </p>
+                <p>R$ {{debt.value}}</p>
+            </span>
+            <span class="totalDebt">
+                <p>Débitos totais</p>
+                <p>R$ {{totalDebt}}</p>
+            </span>
+        </div>
+    </div>
 </section>

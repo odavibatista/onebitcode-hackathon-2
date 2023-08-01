@@ -1,0 +1,47 @@
+@import '../../../styles.scss';
+
+section {
+    background-color: $dg;
+    border-radius: 15px;
+    color: $xy;
+    display: flex;
+    flex-direction: column;
+    font-family: $rw;
+    padding: 20px 30px;
+}
+
+h1, h3  {
+    font-weight: bold;
+}
+
+.debts  {
+    display: grid;
+
+}
+
+.payments   {
+    border-radius: 10px;
+    background-color: $lg;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 0px 15px;
+}
+
+.debt   {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: $ms;
+    justify-content: space-between;
+}
+
+.totalDebt  {
+    border-top: 2px solid $ly;
+    color: $ly;
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: space-between;
+    padding-top: 10px;
+}

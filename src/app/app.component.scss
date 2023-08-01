@@ -1,19 +1,10 @@
 @import '../styles.scss';
 
-html    {
-    background-color: $dark;
-}
-
-body    {
-    background-color: $dark;
-}
-
 .main-container {
     background-color: $dark;
 }
 
 main    {
-    background-color: $dark;
     min-height: 120vh;
     position: relative;
 }

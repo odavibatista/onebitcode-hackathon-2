@@ -31,29 +31,24 @@ export class LoginComponent {
 
   ngOnInit(): void  {
     const loginForm: any = document.getElementById('loginForm')
+    const emailError: any = document.getElementById('email-login-error')
+
     loginForm.addEventListener('submit', (ev: any) => {
       ev.preventDefault();
       
       const loginEmail: any = document.getElementById('emailLogin')
       const loginPassword: any = document.getElementById('passwordLogin')
   
-      if  (//@ts-ignore
-          loginEmail.value === JSON.parse(localStorage.getItem('registeredUser'))?.email
-          //@ts-ignore
-          && loginPassword.value === JSON.parse(localStorage.getItem('registeredUser'))?.password
-          )   {
-  
-              localStorage.setItem('isLoggedIn', JSON.stringify(true))
-              window.location.replace("/student")
+      //@ts-ignore
+      if  (loginEmail.value === JSON.parse(localStorage.getItem('registeredUser'))?.email && loginPassword.value === JSON.parse(localStorage.getItem('registeredUser'))?.password)   {
+        localStorage.setItem('isLoggedIn', JSON.stringify(true))
+        window.location.replace("/student")
+      }   
+      //@ts-ignore
+      else if (loginEmail.value !== JSON.parse(localStorage.getItem('registeredUser'))?.email || loginPassword.value !== JSON.parse(localStorage.getItem('registeredUser'))?.password)    {
+        emailError.innerText = 'E-mail ou senha incorretos!'
+      }   
 
-      }   else if(
-          //@ts-ignore
-          loginEmail.value !== JSON.parse(localStorage.getItem('registeredUser'))?.email
-          //@ts-ignore
-          || loginPassword.value !== JSON.parse(localStorage.getItem('registeredUser'))?.password
-          )    {
-  
-      }
     })
   }
 }

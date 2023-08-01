@@ -12,6 +12,10 @@
     &:hover {
         border-color: $ly;
 
+        .modalImg   {
+            filter: saturate(0);
+        }
+
         .modalName  {
             color: $ly;
         }
@@ -19,11 +23,13 @@
         .modalDesc  {
             color: $ly;
         }
+        
     }
 }
 
 .modalImg   {
     border-radius: 10px 10px 0px 0px;
+    transition: 0.3s;
 }
 
 .modalName  {

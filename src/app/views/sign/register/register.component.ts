@@ -83,6 +83,7 @@ export class RegisterComponent {
               email: userInputs.email.value,
               password: userInputs.password.value,
               memberSince: `${date.getDate()}/${date.getUTCMonth()+1}/${date.getFullYear()}`,
+              membership: 'Simple'
             }
   
             localStorage.setItem('registeredUser', JSON.stringify(userInfo))
