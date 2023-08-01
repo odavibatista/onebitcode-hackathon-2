@@ -11,7 +11,6 @@ import { ClassesComponent } from './views/classes/classes.component';
 import { CoachesComponent } from './views/coaches/coaches.component';
 import { MembershipsComponent } from './views/memberships/memberships.component';
 import { TestimoniesComponent } from './views/testimonies/testimonies.component';
-import { FaqComponent } from './views/faq/faq.component';
 import { SignComponent } from './views/sign/sign.component';
 import { RegisterComponent } from './views/sign/register/register.component';
 import { LoginComponent } from './views/sign/login/login.component';
@@ -20,6 +19,11 @@ import { PrivacyComponent } from './views/privacy/privacy.component';
 import { TermsComponent } from './views/terms/terms.component';
 import { ModalsComponent } from './views/index/modals/modals.component';
 import { ModalsSectionComponent } from './views/index/modals-section/modals-section.component';
+import { GearComponent } from './views/index/gear/gear.component';
+import { HeroComponent } from './views/index/hero/hero.component';
+import { TestimonialsComponent } from './views/index/testimonials/testimonials.component';
+import { TestimonyComponent } from './views/index/testimonials/testimony/testimony.component';
+import { ContactComponent } from './views/contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -31,8 +35,7 @@ import { ModalsSectionComponent } from './views/index/modals-section/modals-sect
         CoachesComponent, 
         MembershipsComponent, 
         TestimoniesComponent, 
-        FaqComponent, 
-        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent, GearComponent, HeroComponent, TestimonialsComponent, TestimonyComponent, ContactComponent
     ],
 
     imports: [

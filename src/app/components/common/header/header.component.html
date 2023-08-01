@@ -8,27 +8,27 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a routerLink="/classes" class="nav-link" (click)="adjustNavbarOnResolution()">Aulas</a>
+                <a routerLink="/classes" class="nav-link" (click)="(adjustNavbarOnResolution())">Aulas</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/coaches" class="nav-link" (click)="adjustNavbarOnResolution()">Profissionais</a>
+                <a routerLink="/coaches" class="nav-link" (click)="(adjustNavbarOnResolution())">Profissionais</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/memberships" class="nav-link" (click)="adjustNavbarOnResolution()">Planos</a>
+                <a routerLink="/memberships" class="nav-link" (click)="(adjustNavbarOnResolution())">Planos</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/testimonies" class="nav-link" (click)="adjustNavbarOnResolution()">Depoimentos</a>
+                <a routerLink="/testimonies" class="nav-link" (click)="(adjustNavbarOnResolution())">Depoimentos</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/faq" class="nav-link" (click)="adjustNavbarOnResolution()">FAQ</a>
+                <a routerLink="/faq" class="nav-link" (click)="(adjustNavbarOnResolution())">FAQ</a>
             </li>
-            <li class="nav-item" *ngIf="currentlyLogged === null">
-                <a routerLink="/sign" class="loginButton nav-link">
+            <li class="nav-item" *ngIf="currentlyLogged === null" style="justify-self: flex-end;" id="loginButton">
+                <a routerLink="/sign" class="loginButton nav-link" (click)="(adjustNavbarOnResolution())">
                     <p>Entrar</p>
                 </a>
             </li>
             <li class="nav-item" *ngIf="currentlyLogged !== null">
-                <a routerLink="/student" class="userData nav-link" >
+                <a routerLink="/student" class="userData nav-link" (click)="(adjustNavbarOnResolution())">
                     <img src="/assets/user.svg" alt="">
                     <p>Name</p>
                 </a>

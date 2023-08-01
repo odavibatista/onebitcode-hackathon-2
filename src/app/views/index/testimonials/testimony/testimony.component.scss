@@ -1,0 +1,57 @@
+@import '../../../../../styles.scss';
+
+.testimony  {
+    align-items: center;
+    background-color: $dg;
+    border-radius: 20px;
+    color: $ly;
+    display: flex;
+    font-family: $rw;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px 10px 20px;
+    text-align: center;
+    width: 320px;
+
+}
+
+.relate   {
+    font-size: 16px;
+    min-height: 240px;
+}
+
+.profile    {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.name   {
+    color: $xy;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.career {
+    color: $xy;
+    font-family: $rw;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+@media  (max-width: 380px)  {
+    .testimony  {
+        padding: 30px 20px 10px 20px;
+        width: 300px;
+    }
+
+    .relate   {
+        font-size: 12px;
+        min-height: 130px;
+    }
+}

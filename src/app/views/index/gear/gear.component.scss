@@ -1,0 +1,72 @@
+@import '../../../../styles.scss';
+
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 120px 0px;
+
+    div {
+        color: $xy;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        h1  {
+            font-family: $ms;
+            font-weight: 700;
+        }
+
+        a   {
+            border: 2px solid $xy;
+            border-radius: 25px;
+            display: flex;
+            font-weight: bold;
+            padding: 8px 20px 8px 25px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 135px;
+    
+            transition: 0.3s;
+            &:hover {
+                border-color: $ly;
+                color: $ly;
+            }
+        }
+    }
+}
+
+img {
+    border-radius: 20px 0px 20px 0px;
+    width: 40%;
+}
+
+.gearDescription   {
+    font-family: $rw;
+    font-size: 24px;
+}
+
+@media  (max-width: 1200px) {
+    .gearDescription   {
+        font-size: 18px;
+    }
+}
+
+@media  (max-width: 991px)  {
+    section {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+
+        div {
+            align-items: center;
+            width: 98%;
+        }
+    }
+
+    img {
+        width: 99%;
+    }
+}

@@ -25,6 +25,12 @@ a   {
     color: $xy;
 }
 
+strong  {
+    color: $ly;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
 .linker {
     color: $xy;
     cursor: pointer;
