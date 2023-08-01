@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./student.component.scss']
 })
 export class StudentComponent {
-
+  ngOnInit(): void  {
+    //@ts-ignore
+    if(JSON.parse(localStorage.getItem('isLoggedIn')) === true) {
+    }   else    {
+        window.location.replace("/sign")
+    }
+  }
 }

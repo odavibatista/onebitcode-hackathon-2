@@ -20,16 +20,19 @@ export class AppComponent {
 
     title = 'x-health'
 
-    isLoggedIn: boolean = false
+
+    ngOnInit(): void {
+    const    isLoggedIn: boolean = false
 
     /* Testing the localstorage */
-    setCredentials () {
-        localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn))
+        localStorage.setItem('isLoggedIn', JSON.stringify(isLoggedIn))
 
         if(localStorage.getItem('localStorageData') === null)   {
-            localStorage.setItem("localStorageData", JSON.stringify(this.isLoggedIn))
+            localStorage.setItem("localStorageData", JSON.stringify(isLoggedIn))
         }
+
     }
+
 
 
 }
