@@ -24,6 +24,7 @@ import { HeroComponent } from './views/index/hero/hero.component';
 import { TestimonialsComponent } from './views/index/testimonials/testimonials.component';
 import { TestimonyComponent } from './views/index/testimonials/testimony/testimony.component';
 import { ContactComponent } from './views/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -39,6 +40,7 @@ import { ContactComponent } from './views/contact/contact.component';
     ],
 
     imports: [
+        BrowserAnimationsModule,
         BrowserModule, 
         AppRoutingModule, 
         NgxSplideModule 

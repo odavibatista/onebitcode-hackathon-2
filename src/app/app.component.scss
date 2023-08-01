@@ -1,12 +1,22 @@
 @import '../styles.scss';
 
+html    {
+    background-color: $dark;
+}
+
+body    {
+    background-color: $dark;
+}
+
 .main-container {
     background-color: $dark;
     padding: 28px 40px;
 }
 
-.container  {
-    padding: 0px;
+main    {
+    background-color: $dark;
+    min-height: 120vh;
+    position: relative;
 }
 
 @media  (max-width: 1366px) {

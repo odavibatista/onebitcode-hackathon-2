@@ -1,6 +1,7 @@
 @import '../../../../styles.scss';
 
 #login  {
+    animation: fadeIn 0.4s;
     background-color: $dg;
     border-radius: 15px;
     display: flex;
@@ -8,7 +9,6 @@
     min-height: 501px;
     justify-content: space-between;
     padding: 24px 48px 0px 24px;
-
     width: 100%;
 }
 
