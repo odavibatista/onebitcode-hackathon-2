@@ -1,0 +1,7 @@
+<section>
+    <h1><strong>Personalize</strong> sua experiência na xHealth!</h1>
+    <p>Nosso espaço conta também com outros serviços que irão ajudar com o cuidado da sua saúde e do seu treino!</p>
+    <div>
+        <app-service *ngFor="let service of services" [service]="service"></app-service>
+    </div>
+</section>

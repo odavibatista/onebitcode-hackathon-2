@@ -1,0 +1,57 @@
+@import '../../../../styles.scss';
+
+section {
+    color: $xy;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0px;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+h1  {
+    font-family: $ms;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+p   {
+    font-family: $rw;
+    font-size: 24px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media  (max-width: 1199px) {
+    h1  {
+        font-size: 56px;
+    }
+
+    p   {
+        font-size: 18px;
+    }
+}
+
+@media  (max-width: 1087px) {
+    h1  {
+        font-size: 48px;
+    }
+
+}
+
+@media  (max-width: 991px)  {
+    h1  {
+        font-size: 24px;
+    }
+
+    p   {
+        width: 90%;
+    }
+}
+

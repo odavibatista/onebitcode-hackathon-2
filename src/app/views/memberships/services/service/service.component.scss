@@ -1,0 +1,97 @@
+@import '../../../../../styles.scss';
+
+.service    {
+    align-items: center;
+    color: $xy;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+h1  {
+    font-family: $ms;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info   {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+}
+
+p   {
+    font-family: $rw;
+    font-size: 24px;
+}
+
+.reverse    {
+    flex-direction: row-reverse;
+}
+
+img {
+    border-radius: 25px;
+}
+
+button  {
+    background-color: transparent;
+    border: 3px solid $xy;
+    border-radius: 30px;
+    color: $xy;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 140px;
+
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
+}
+
+
+@media  (max-width: 991px)  {
+    h1  {
+        font-size: 24px;
+    }
+
+    p   {
+        font-family: $rw;
+        font-size: 18px;
+    }
+}
+
+@media  (max-width: 768px)  {
+    .service    {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .reverse    {
+        flex-direction: column-reverse;
+    }
+
+    img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    p   {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    button  {
+        align-self: center;
+        margin-top: 0;
+    }
+}

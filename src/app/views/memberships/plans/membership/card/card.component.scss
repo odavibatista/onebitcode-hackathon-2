@@ -1,0 +1,86 @@
+@import '../../../../../../styles.scss';
+
+.card   {
+    background-color: transparent;
+    border: 3px solid $xy;
+    color: $xy;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    font-family: $qs;
+    text-align: center;
+    width: 316px;
+}
+
+img {
+    border-radius: 18px 18px 0px 0px;
+}
+
+h1  {
+    font-family: $rw;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.monthly    {
+    font-family: $ms;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.info   {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 45px;
+}
+
+.description    {
+    color: $ly;
+    height: 100px;
+    padding: 0px 10px;
+}
+
+button  {
+    align-self: center;
+    background-color: transparent;
+    border: 3px solid $xy;
+    border-radius: 30px;
+    color: $xy;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 140px;
+
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
+}
+
+@media  (max-width: 766px)  {
+    .card   {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    h1  {
+        font-size: 24px;
+    }
+
+    .monthly    {
+        font-size: 20px;
+    }
+    
+    .description    {
+        font-size: 12px;
+        height: 55px;
+    }
+
+    button  {
+        font-size: 14px;
+        padding: 2px 0px;
+    }
+}

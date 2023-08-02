@@ -25,6 +25,11 @@ import { TestimonialsComponent } from './views/index/testimonials/testimonials.c
 import { TestimonyComponent } from './views/index/testimonials/testimony/testimony.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MembershipComponent } from './views/memberships/plans/membership/membership.component';
+import { ServicesComponent } from './views/memberships/services/services.component';
+import { ServiceComponent } from './views/memberships/services/service/service.component';
+import { CardComponent } from './views/memberships/plans/membership/card/card.component';
+import { PlansComponent } from './views/memberships/plans/plans.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +41,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         CoachesComponent, 
         MembershipsComponent, 
         TestimoniesComponent, 
-        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent, GearComponent, HeroComponent, TestimonialsComponent, TestimonyComponent, ContactComponent
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent, GearComponent, HeroComponent, TestimonialsComponent, TestimonyComponent, ContactComponent, MembershipComponent, ServicesComponent, ServiceComponent, CardComponent, PlansComponent
     ],
 
     imports: [
