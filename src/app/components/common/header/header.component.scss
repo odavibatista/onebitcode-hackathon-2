@@ -5,7 +5,7 @@
     border-radius: 35px;
     filter: drop-shadow(0px 1px rgba(0, 0, 0, 0.824));
     height: 60px;
-    padding: 0px 50px;
+    padding: 0px 25px;
     width: 100%;
     z-index: 100;
 }
@@ -41,6 +41,8 @@
         color: $xy;
     }
 }
+
+
 
 .loginButton    {
     border: 2px solid $xy;
@@ -98,6 +100,10 @@
 
 
 @media  (max-width: 1366px) {
+    .navigation {
+        padding: 0px 30px;
+    }
+
     .navbar-nav {
         gap: 13%;
     }
@@ -118,6 +124,11 @@
 }
 
 @media  (max-width: 991px)  {
+    .navigation {
+        border-radius: 20px;
+        height: 55px;
+    }
+
     .navImage   {
         margin: 0;
         padding: 0;
@@ -136,6 +147,11 @@
         justify-self: center;
         padding: 10px 50px;
         width: 100%;
+    }
+
+    .userButton {
+        align-self: flex-start;
+        margin-left: -10px;
     }
 }
 

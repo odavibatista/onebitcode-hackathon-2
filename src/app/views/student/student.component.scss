@@ -6,17 +6,187 @@ section {
     color: $xy;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     font-family: $rw;
-    padding: 20px 30px;
+    margin: 70px 0px;
+    padding: 40px 30px;
+}
+
+button  {
+    align-self: center;
+    background-color: transparent;
+    border: 3px solid $xy;
+    border-radius: 30px;
+    color: $xy;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 6px 0px 2px 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 140px;
+
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
 }
 
 h1, h3  {
     font-weight: bold;
 }
 
-.debts  {
-    display: grid;
+h3  {
+    font-size: 36px;
+    text-align: right;
+}
 
+.userData   {
+    background-color: $lg;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 22px 15px 22px;
+}
+
+
+.userCredentials   {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.userInfo   {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+    p   {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.userIcon   {
+    border: 3px solid $xy;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.memberSince    {
+    font-family: Arial, Helvetica, sans-serif;
+
+    p   {
+        font-size: 20px;
+        margin: 0;
+        margin-top: 4px;
+    }
+}
+
+.emailAndMembership {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    p   {
+        font-size: 20px;
+        margin: 0;
+        margin-top: 4px;
+    }
+}
+
+h2  {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.benefitsDiv    {
+    align-items: center;
+    border-top: 4px solid $xy;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.benefits   {
+    align-items: start;
+    background-color: $lg;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo   {
+    margin-top: 50px;
+    width: 120px;
+}
+
+.benefit    {
+    align-items: center;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    transition: 0.3s;
+    width: 100%;
+
+    img {
+        height: 30px;
+    }
+
+    p   {
+        font-family: $ms;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    &:hover {
+        filter: saturate(0) brightness(200%);
+    }
+}
+
+.debts  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.paymentHeader  {
+    align-items: center;
+    background-color: $dg;
+    border-bottom: 2px solid $ly;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 20px 15px 0px 15px;
+}
+
+.heading    {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.info   {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 180px;
 }
 
 .payments   {
@@ -24,7 +194,8 @@ h1, h3  {
     background-color: $lg;
     display: flex;
     flex-direction: column;
-    padding: 20px 15px 0px 15px;
+    border: 2px solid $ly;
+    
 }
 
 .debt   {
@@ -33,6 +204,7 @@ h1, h3  {
     flex-direction: row;
     font-family: $ms;
     justify-content: space-between;
+    padding: 15px 15px 0px 15px;
 }
 
 .totalDebt  {
@@ -43,5 +215,164 @@ h1, h3  {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     justify-content: space-between;
-    padding-top: 10px;
+    padding: 15px 15px 0px 15px;
+}
+
+@media  (max-width: 640px)  {
+    .logo   {
+        width: 35px;
+    }
+}
+
+@media  (max-width: 520px)  {
+    section {
+        gap: 30px;
+        margin: 35px 0px;
+        padding: 25px;
+    }
+
+    button  {
+        font-size: 12px;
+        padding: 3px 0px 1px 0px;
+        width: 110px;
+    }
+
+    h3  {
+        font-size: 24px;
+    }
+
+    .userData   {
+        gap: 10px;
+    }
+    
+    .userCredentials, .userInfo, .emailAndMembership    {
+        flex-direction: column;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .userInfo, .memberSince, .userEmail, .memberShip    {
+        p   {
+            font-size: 18px;
+        }
+    }
+
+    button  {
+        margin-top: 5px;
+    }
+
+    .benefitsDiv    {
+        flex-direction: column;
+    }
+
+    .benefits   {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .benefit   {
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 20px;
+        }
+    
+        p   {
+            font-size: 18px;
+        }
+    }
+
+    .logo   {
+        margin: 10px 0px -20px 0px;
+        width: 80px;
+    }
+
+    .paymentHeader  {
+        height: 20px;
+        padding: 25px 5px 5px 5px;
+    }
+
+
+    .payments   {
+        p   {
+            font-size: 12px;
+        }
+    }
+
+    .debt   {
+        padding: 15px 5px 0px 5px;
+    }
+
+    .heading    {
+        width: 130px;
+    }
+
+    .info   {
+        width: 120px;
+    }
+
+    .totalDebt  {
+        height: 30px;
+        padding: 5px 15px 0px 15px;
+    }
+}
+
+@media  (max-width: 425px)  {
+    section {
+        padding: 10px;
+    }
+
+    h3  {
+        font-size: 18px;
+    }
+
+    .userInfo, .memberSince, .userEmail, .memberShip    {
+        p   {
+            font-size: 14px;
+        }
+    }
+
+    h2  {
+        font-size: 20px;
+    }
+
+    .logo   {
+        width: 50px;
+    }
+
+
+
+    .benefit   {
+        img {
+            height: 15px;
+        }
+    
+        p   {
+            font-size: 14px;
+        }
+    }
+
+    .payments   {
+        p   {
+            font-size: 10px;
+        }
+    }
+
+    .debt   {
+        padding: 5px 5px 0px 5px;
+    }
+
+    .heading    {
+        width: 100px;
+    }
+
+    .info   {
+        width: 95px;
+    }
+
+    .totalDebt  {
+        padding: 5px 5px 0px 5px;
+    }
 }

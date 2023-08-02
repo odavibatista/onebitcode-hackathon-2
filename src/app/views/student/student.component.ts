@@ -18,14 +18,27 @@ export class StudentComponent {
     memberSince: JSON.parse(localStorage.getItem('registeredUser'))?.memberSince,
   }
 
+  disconnectUser  ()  {
+    localStorage.setItem('isLoggedIn', JSON.stringify(false))
+    window.location.reload()
+  }
+
+  benefits  = [
+    'Acesso às unidades xHealth;',
+    'Snacks ao fim do mês;',
+    'Acesso à plataforma.',
+  ]
+
   debts = [
     {
       title: "Taxa de Inscrição",
+      expiration: '15/08/2023',
       value: 19.99
     },
 
     {
       title: "Mensalidade - Agosto",
+      expiration: '31/08/2023',
       value: 49.99
     },
   ]

@@ -16,6 +16,10 @@ This project's goal is to build a website for a gym, based on an authoral Figma 
 ## 🎈 Features <a name = "features"></a>
 The project is based on a Single-Page-Application/SPA for the gym's services. It uses Angular-Router for better performance and usage of the website's potential.
 
+- Page transitions: The application contains transitions between the routes, in a way of turning its usage smoothier;
+- Register and Login: The sign section contains a button that changes between login and register forms. Both of them are 100% functional, with verifications for the inputs and its values;
+- Routing: The application uses Angular Router for its alternate pages.
+
 ## ⛏ Used Techs/Services <a name = "techs-used"></a>
 - [Angular](https://angular.io/)
 - [Bootstrap](https://getbootstrap.com/)

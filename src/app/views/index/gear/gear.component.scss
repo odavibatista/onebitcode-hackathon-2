@@ -61,10 +61,19 @@ img {
     }
 }
 
-@media  (max-width: 1200px) {
-    .gearDescription   {
-        font-size: 18px;
+@media  (max-width: 1199px) {
+    h1  {
+        font-size: 56px;
     }
+
+
+}
+
+@media  (max-width: 1087px) {
+    h1  {
+        font-size: 48px;
+    }
+
 }
 
 @media  (max-width: 991px)  {
@@ -80,6 +89,16 @@ img {
     }
 
     img {
+        border-radius: 20px;
         width: 99%;
+    }
+
+    h1  {
+        border: none;
+        font-size: 36px;
+    }
+
+    .gearDescription   {
+        font-size: 18px;
     }
 }

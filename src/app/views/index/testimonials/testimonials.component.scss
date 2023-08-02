@@ -53,17 +53,46 @@ a   {
     }
 }
 
-@media  (max-width: 1190px)  {
+@media  (max-width: 1366px) {
+    h1  {
+        font-size: 64px;
+    }
+}
+
+@media  (max-width: 1199px)  {
     .section    {
         gap: 30px;
         justify-content: center;
     }
-}
 
-@media  (max-width: 1191px)  {
     div {
         align-items: center;
         gap: 120px;
         justify-content: center;
+    }
+
+    h1  {
+        font-size: 56px;
+    }
+
+    p   {
+        width: 80%;
+    }
+}
+
+@media  (max-width: 1087px) {
+    h1  {
+        font-size: 48px;
+    }
+}
+
+@media  (max-width: 991px)  {
+    h1  {
+        border: none;
+        font-size: 36px;
+    }
+
+    div {
+        gap: 40px;
     }
 }
