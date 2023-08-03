@@ -11,7 +11,7 @@
 ## 🔍 About <a name = "about-it"></a>
 Welcome to X-Health! This project was made by <a href="https://github.com/daviebatista">daviebatista</a> and <a href="https://github.com/H1g0rw">H1g0rw</a> for the second edition of OneBitCode's Hackathons.
 
-This project's goal is to build a website for a gym, based on an authoral Figma wireframe made by the project's team.
+This project's goal is to build a website for a gym, based on an authoral <a href="https://www.figma.com/file/aE2ogEyrQlA97nXdtHk4Fv/XHealth?type=design&node-id=0%3A1&mode=design&t=PgAiu6PCSkGOfsuh-1">Figma</a> wireframe made by the project's team.
 
 ## 🎈 Features <a name = "features"></a>
 The project is based on a Single-Page-Application/SPA for the gym's services. It uses Angular-Router for better performance and usage of the website's potential.
