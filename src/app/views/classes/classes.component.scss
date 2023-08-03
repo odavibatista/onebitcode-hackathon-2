@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 76px;
+    padding: 70px 0px;
+}
+
+h1  {
+    color: $xy;
+    font-family: $ms;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media  (min-width: 768px)  {
+    h1  {
+        font-size: 54px;
+    }
+}

@@ -30,10 +30,6 @@ p   {
     font-size: 24px;
 }
 
-.reverse    {
-    flex-direction: row-reverse;
-}
-
 img {
     border-radius: 25px;
 }
@@ -73,10 +69,6 @@ button  {
         flex-direction: column;
         gap: 20px;
         text-align: center;
-    }
-
-    .reverse    {
-        flex-direction: column-reverse;
     }
 
     img {

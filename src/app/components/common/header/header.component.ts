@@ -33,6 +33,5 @@ export class HeaderComponent {
                 delete link.dataset.bsTarget;
             });
         }
-
     }
 }

@@ -1,0 +1,75 @@
+@import '../../../../../styles.scss';
+
+.class  {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+.info   {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1  {
+    color: $ly;
+    font-family: $ms;
+    font-weight: bold;
+}
+
+p   {
+    color: $xy;
+    font-family: $rw;
+    font-size: 24px;
+}
+
+.reverse    {
+    flex-direction: row-reverse;
+}
+
+img {
+    border-radius: 50%;
+}
+
+@media  (max-width: 1024px) {
+    p   {
+        font-size: 18px;
+    }
+}
+
+@media  (max-width: 768px)  {
+    .class  {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .info   {
+        gap: 0px;
+        padding: 0px 20px;
+    }
+
+    .reverse    {
+        flex-direction: column;
+    }
+
+    p   {
+        font-size: 16px;
+    }
+
+    img {
+        width: 180px;
+    }
+}
+
+@media  (max-width: 425px)  {
+    .info   {
+        padding: 0px 10px;
+    }
+    p   {
+        font-size: 12px;
+    }
+}

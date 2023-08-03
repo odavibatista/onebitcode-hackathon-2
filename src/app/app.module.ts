@@ -30,6 +30,8 @@ import { ServicesComponent } from './views/memberships/services/services.compone
 import { ServiceComponent } from './views/memberships/services/service/service.component';
 import { CardComponent } from './views/memberships/plans/membership/card/card.component';
 import { PlansComponent } from './views/memberships/plans/plans.component';
+import { ClassListComponent } from './views/classes/class-list/class-list.component';
+import { SingleClassComponent } from './views/classes/class-list/single-class/single-class.component';
 
 @NgModule({
     declarations: [
@@ -37,11 +39,10 @@ import { PlansComponent } from './views/memberships/plans/plans.component';
         HeaderComponent, 
         FooterComponent, 
         IndexComponent, 
-        ClassesComponent, 
         CoachesComponent, 
         MembershipsComponent, 
         TestimoniesComponent, 
-        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent, GearComponent, HeroComponent, TestimonialsComponent, TestimonyComponent, ContactComponent, MembershipComponent, ServicesComponent, ServiceComponent, CardComponent, PlansComponent
+        SignComponent, RegisterComponent, LoginComponent, StudentComponent, PrivacyComponent, TermsComponent, ModalsComponent, ModalsSectionComponent, GearComponent, HeroComponent, TestimonialsComponent, TestimonyComponent, ContactComponent, MembershipComponent, ServicesComponent, ServiceComponent, CardComponent, PlansComponent, ClassesComponent, ClassListComponent, SingleClassComponent
     ],
 
     imports: [
