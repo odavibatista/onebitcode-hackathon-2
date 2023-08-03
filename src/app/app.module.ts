@@ -34,6 +34,8 @@ import { SingleClassComponent } from './views/classes/class-list/single-class/si
 import { CoachesComponent } from './views/coaches/coaches.component'
 import { CoachesListComponent } from './views/coaches/coaches-list/coaches-list.component'
 import { SingleCoachComponent } from './views/coaches/coaches-list/single-coach/single-coach.component'
+import { FaqSectionComponent } from './views/contact/faq-section/faq-section.component'
+import { QuestionComponent } from './views/contact/faq-section/question/question.component'
 
 @NgModule({
     declarations: [
@@ -66,7 +68,9 @@ import { SingleCoachComponent } from './views/coaches/coaches-list/single-coach/
         SingleClassComponent,
         CoachesComponent,
         CoachesListComponent,
-        SingleCoachComponent
+        SingleCoachComponent,
+        FaqSectionComponent,
+        QuestionComponent
     ],
 
     imports: [BrowserAnimationsModule, BrowserModule, AppRoutingModule, NgxSplideModule],

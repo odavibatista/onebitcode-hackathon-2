@@ -1,0 +1,128 @@
+@import '../../../styles.scss';
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 70px 0px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    text-align: center;
+
+    p {
+        margin-top: -60px;
+    }
+}
+
+p {
+    color: $xy;
+    font-family: $rw;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    color: $ly;
+    font-family: $ms;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactButton {
+    align-items: center;
+    border: 6px solid $xy;
+    border-radius: 60px;
+    color: $xy;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+    p {
+        font-family: $ms;
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    &:hover {
+        filter: saturate(0);
+        filter: brightness(350%);
+    }
+}
+
+img {
+    width: 48px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1087px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .contactButton {
+        border-width: 4px;
+        gap: 10px;
+        padding: 4px 20px;
+
+        p {
+            font-size: 28px;
+        }
+    }
+
+    img {
+        width: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        gap: 120px;
+    }
+
+    .intro {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 380px) {
+    .contactButton {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    img {
+        width: 24px;
+    }
+}

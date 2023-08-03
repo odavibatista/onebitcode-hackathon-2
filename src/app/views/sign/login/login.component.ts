@@ -37,17 +37,18 @@ export class LoginComponent {
             const loginEmail: any = document.getElementById('emailLogin')
             const loginPassword: any = document.getElementById('passwordLogin')
 
-            //@ts-ignore
             if (
+                //@ts-ignore
                 loginEmail.value === JSON.parse(localStorage.getItem('registeredUser'))?.email &&
+                //@ts-ignore
                 loginPassword.value === JSON.parse(localStorage.getItem('registeredUser'))?.password
             ) {
                 localStorage.setItem('isLoggedIn', JSON.stringify(true))
                 window.location.replace('/student')
-            }
-            //@ts-ignore
-            else if (
+            } else if (
+                //@ts-ignore
                 loginEmail.value !== JSON.parse(localStorage.getItem('registeredUser'))?.email ||
+                //@ts-ignore
                 loginPassword.value !== JSON.parse(localStorage.getItem('registeredUser'))?.password
             ) {
                 emailError.innerText = 'E-mail ou senha incorretos!'
