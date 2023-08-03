@@ -51,6 +51,44 @@ strong {
     }
 }
 
+.testimonyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.testimoniesDiv {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonyText  {
+    color: $xy;
+    font-family: $ms;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media  (max-width: 1145px) {
+    .testimoniesDiv {
+        gap: 45px;
+        justify-content: center;
+    }
+}
+
+@media  (max-width: 768px)  {
+
+    .testimonyText  {
+        font-size: 24px;
+    }
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 ::-webkit-scrollbar {

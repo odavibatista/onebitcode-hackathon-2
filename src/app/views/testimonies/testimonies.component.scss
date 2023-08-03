@@ -1,0 +1,109 @@
+@import '../../../styles.scss';
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    padding: 70px 5px;
+}
+
+h1  {
+    color: $xy;
+    font-family: $ms;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+p   {
+    color: $ly;
+    font-family: $rw;
+    font-size: 24px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.headings   {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h2  {
+    color: $xy;
+    font-family: $ms;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.flyer  {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 70px 0px;
+}
+
+a {
+    border: 2px solid $xy;
+    border-radius: 65px;
+    display: grid;
+    font-size: 30px;
+    font-weight: bold;
+    justify-self: center;
+    margin: 0 auto;
+    padding: 4px 20px;
+    place-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 305px;
+
+    transition: 0.3s;
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
+}
+
+@media  (max-width: 768px)  {
+    h1  {
+        font-size: 48px;
+    }
+
+    p   {
+        font-size: 20px;
+        width: 80%;
+    }
+    
+    .flyer  {
+        padding: 30px 0px;
+    }
+
+    h2  {
+        font-size: 20px;
+    }
+
+    a   {
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+@media  (max-width: 425px)  {
+    h1  {
+        font-size: 36px;
+    }
+    
+    p   {
+        font-size: 18px;
+    }
+}

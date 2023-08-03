@@ -9,7 +9,6 @@ import { FooterComponent } from './components/common/footer/footer.component'
 import { IndexComponent } from './views/index/index.component'
 import { ClassesComponent } from './views/classes/classes.component'
 import { MembershipsComponent } from './views/memberships/memberships.component'
-import { TestimoniesComponent } from './views/testimonies/testimonies.component'
 import { SignComponent } from './views/sign/sign.component'
 import { RegisterComponent } from './views/sign/register/register.component'
 import { LoginComponent } from './views/sign/login/login.component'
@@ -35,7 +34,11 @@ import { CoachesComponent } from './views/coaches/coaches.component'
 import { CoachesListComponent } from './views/coaches/coaches-list/coaches-list.component'
 import { SingleCoachComponent } from './views/coaches/coaches-list/single-coach/single-coach.component'
 import { FaqSectionComponent } from './views/contact/faq-section/faq-section.component'
-import { QuestionComponent } from './views/contact/faq-section/question/question.component'
+import { QuestionComponent } from './views/contact/faq-section/question/question.component';
+import { TestimoniesComponent } from './views/testimonies/testimonies.component';
+import { FirstTestimoniesComponent } from './views/testimonies/first-testimonies/first-testimonies.component';
+import { SecondTestimoniesComponent } from './views/testimonies/second-testimonies/second-testimonies.component';
+import { ThirdTestimoniesComponent } from './views/testimonies/third-testimonies/third-testimonies.component'
 
 @NgModule({
     declarations: [
@@ -44,7 +47,6 @@ import { QuestionComponent } from './views/contact/faq-section/question/question
         FooterComponent,
         IndexComponent,
         MembershipsComponent,
-        TestimoniesComponent,
         SignComponent,
         RegisterComponent,
         LoginComponent,
@@ -70,7 +72,11 @@ import { QuestionComponent } from './views/contact/faq-section/question/question
         CoachesListComponent,
         SingleCoachComponent,
         FaqSectionComponent,
-        QuestionComponent
+        QuestionComponent,
+        TestimoniesComponent,
+        FirstTestimoniesComponent,
+        SecondTestimoniesComponent,
+        ThirdTestimoniesComponent
     ],
 
     imports: [BrowserAnimationsModule, BrowserModule, AppRoutingModule, NgxSplideModule],

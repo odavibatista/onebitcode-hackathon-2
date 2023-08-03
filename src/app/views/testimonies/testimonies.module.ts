@@ -1,10 +1,14 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { TestimoniesRoutingModule } from './testimonies-routing.module'
+import { TestimoniesRoutingModule } from './testimonies-routing.module';
+
 
 @NgModule({
-    declarations: [],
-    imports: [CommonModule, TestimoniesRoutingModule]
+  declarations: [],
+  imports: [
+    CommonModule,
+    TestimoniesRoutingModule
+  ]
 })
-export class TestimoniesModule {}
+export class TestimoniesModule { }

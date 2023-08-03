@@ -14,8 +14,25 @@ h1 {
     text-align: center;
 }
 
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p   {
+    color: $xy;
+    font-family: $rw;
+    font-size: 18px;
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     h1 {
         font-size: 54px;
+    }
+
+    p   {
+        font-size: 24px;
     }
 }
