@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-  selector: 'app-coaches',
-  templateUrl: './coaches.component.html',
-  styleUrls: ['./coaches.component.scss']
+    selector: 'app-coaches',
+    templateUrl: './coaches.component.html',
+    styleUrls: ['./coaches.component.scss']
 })
-export class CoachesComponent {
-
-}
+export class CoachesComponent {}

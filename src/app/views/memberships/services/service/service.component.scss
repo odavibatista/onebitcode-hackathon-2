@@ -1,6 +1,6 @@
 @import '../../../../../styles.scss';
 
-.service    {
+.service {
     align-items: center;
     color: $xy;
     display: flex;
@@ -10,14 +10,18 @@
     text-align: left;
 }
 
-h1  {
+.reverse {
+    flex-direction: row-reverse;
+}
+
+h1 {
     font-family: $ms;
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.info   {
+.info {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -25,7 +29,7 @@ h1  {
     height: 100%;
 }
 
-p   {
+p {
     font-family: $rw;
     font-size: 24px;
 }
@@ -34,7 +38,7 @@ img {
     border-radius: 25px;
 }
 
-button  {
+button {
     background-color: transparent;
     border: 3px solid $xy;
     border-radius: 30px;
@@ -52,23 +56,26 @@ button  {
     }
 }
 
-
-@media  (max-width: 991px)  {
-    h1  {
+@media (max-width: 991px) {
+    h1 {
         font-size: 24px;
     }
 
-    p   {
+    p {
         font-family: $rw;
         font-size: 18px;
     }
 }
 
-@media  (max-width: 768px)  {
-    .service    {
+@media (max-width: 768px) {
+    .service {
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
     }
 
     img {
@@ -76,13 +83,13 @@ button  {
         width: 95%;
     }
 
-    p   {
+    p {
         font-size: 14px;
         margin: 0 auto;
         width: 90%;
     }
 
-    button  {
+    button {
         align-self: center;
         margin-top: 0;
     }

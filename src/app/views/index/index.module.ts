@@ -1,14 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { IndexRoutingModule } from './index-routing.module';
-
+import { IndexRoutingModule } from './index-routing.module'
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    IndexRoutingModule
-  ]
+    declarations: [],
+    imports: [CommonModule, IndexRoutingModule]
 })
-export class IndexModule { }
+export class IndexModule {}

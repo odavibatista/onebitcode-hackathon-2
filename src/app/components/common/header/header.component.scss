@@ -10,7 +10,7 @@
     z-index: 100;
 }
 
-.navbar-brand   {
+.navbar-brand {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -19,18 +19,17 @@
     &:hover {
         filter: brightness(140%);
     }
-
 }
 
 .navbar-nav {
     gap: 16%;
 }
 
-.navImage   {
+.navImage {
     width: 78px;
 }
 
-.nav-link   {
+.nav-link {
     color: $ly;
     font-family: $qs;
     font-size: 18px;
@@ -42,9 +41,7 @@
     }
 }
 
-
-
-.loginButton    {
+.loginButton {
     border: 2px solid $xy;
     border-radius: 20px;
     color: $xy;
@@ -63,16 +60,16 @@
         color: $ly;
     }
 
-    p   {
+    p {
         margin: 0;
     }
 }
 
-#loginButton    {
+#loginButton {
     margin-left: 15px;
 }
 
-.userData   {
+.userData {
     align-items: center;
     display: flex;
     gap: 2px;
@@ -85,7 +82,7 @@
     }
 }
 
-.nameText   {
+.nameText {
     color: $xy;
     font-family: $qs;
     font-size: 18px;
@@ -98,8 +95,7 @@
     background-color: $xy;
 }
 
-
-@media  (max-width: 1366px) {
+@media (max-width: 1366px) {
     .navigation {
         padding: 0px 30px;
     }
@@ -107,35 +103,35 @@
     .navbar-nav {
         gap: 13%;
     }
-    
-    .nav-link   {
+
+    .nav-link {
         font-size: 16px;
     }
 }
 
-@media  (max-width: 1278px) {
+@media (max-width: 1278px) {
     .navbar-nav {
         gap: 5%;
     }
 
-    .nav-link   {
+    .nav-link {
         font-size: 16px;
     }
 }
 
-@media  (max-width: 991px)  {
+@media (max-width: 991px) {
     .navigation {
         border-radius: 20px;
         height: 55px;
     }
 
-    .navImage   {
+    .navImage {
         margin: 0;
         padding: 0;
         width: 45px;
     }
 
-    #loginButton    {
+    #loginButton {
         margin: 0;
     }
 
@@ -155,8 +151,8 @@
     }
 }
 
-@media  (min-width: 768px)  {
-    .navbar-collapse    {
+@media (min-width: 768px) {
+    .navbar-collapse {
         padding-left: 25px;
     }
 }

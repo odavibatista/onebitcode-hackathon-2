@@ -1,14 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
-import { SignRoutingModule } from './sign-routing.module';
-
+import { SignRoutingModule } from './sign-routing.module'
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    SignRoutingModule
-  ]
+    declarations: [],
+    imports: [CommonModule, SignRoutingModule]
 })
-export class SignModule { }
+export class SignModule {}

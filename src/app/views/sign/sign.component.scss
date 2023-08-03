@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-.section    {
+.section {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@
     padding: 74px 0px;
 }
 
-.news   {
+.news {
     align-items: center;
     background-color: $dg;
     border-radius: 15px;
@@ -25,21 +25,20 @@
         place-content: center;
         width: 90%;
     }
-
 }
-h1  {
+h1 {
     font-family: $rw;
     font-size: 32px;
     font-weight: 800;
 }
 
-span    {
+span {
     align-items: center;
     display: flex;
     gap: 5px;
     width: 90%;
 
-    p   {
+    p {
         font-family: $qs;
         font-size: 16px;
         font-weight: bold;
@@ -51,52 +50,52 @@ span    {
     width: 70px;
 }
 
-.forms  {
+.forms {
     width: 50%;
 
-    *   {
+    * {
         transition: 0.2s;
     }
 }
 
-@media  (max-width: 991px)  {
-    .section    {
+@media (max-width: 991px) {
+    .section {
         flex-direction: column;
         gap: 30px;
 
-        :nth-child(n + 2), :nth-child(n + 3) {
+        :nth-child(n + 2),
+        :nth-child(n + 3) {
             width: 100%;
         }
     }
 
-    .news   {
+    .news {
         padding: 19px 20px 0px 20px;
         width: 100%;
     }
 }
 
-@media  (max-width: 425px)  {
-    .news   {
+@media (max-width: 425px) {
+    .news {
         gap: 20px;
     }
-    h1  {
+    h1 {
         font-size: 24px;
         text-align: center;
     }
-    
-    p  {
+
+    p {
         font-size: 12px;
         text-align: center;
     }
 
-    span    {
+    span {
         img {
             display: none;
         }
     }
 
-
-    span    {
+    span {
         text-align: center;
     }
 }

@@ -1,34 +1,43 @@
 <section>
-    <h1>Olá, <strong>{{userData.name}}</strong>!</h1>
+    <h1>
+        Olá, <strong>{{ userData.name }}</strong
+        >!
+    </h1>
     <div class="userData">
         <div class="userCredentials">
             <span class="userInfo">
-                <img src="/assets/user.svg" alt="icon" class="userIcon">
-                <p>{{userData.name}}</p>
+                <img src="/assets/user.svg" alt="icon" class="userIcon" />
+                <p>{{ userData.name }}</p>
             </span>
             <span class="memberSince">
-                <p>Membro desde: <strong>{{userData.memberSince}}</strong></p>
+                <p>
+                    Membro desde: <strong>{{ userData.memberSince }}</strong>
+                </p>
             </span>
         </div>
         <div class="emailAndMembership">
             <span class="userEmail">
-                <p><strong>{{userData.email}}</strong></p>
+                <p>
+                    <strong>{{ userData.email }}</strong>
+                </p>
             </span>
             <span class="memberShip">
-                <p>Membro <strong>{{userData.membership}}</strong></p>
+                <p>
+                    Membro <strong>{{ userData.membership }}</strong>
+                </p>
             </span>
         </div>
         <div class="benefitsDiv">
             <div class="benefits">
                 <h2>Meus benefícios</h2>
                 <span *ngFor="let benefit of benefits" class="benefit">
-                    <img src="/assets/benefit.svg" alt="">
-                    <p>{{benefit}}</p>
+                    <img src="/assets/benefit.svg" alt="" />
+                    <p>{{ benefit }}</p>
                 </span>
             </div>
-            <img src="/assets/xhealth.png" alt="xhealth-logo" class="logo">
+            <img src="/assets/xhealth.png" alt="xhealth-logo" class="logo" />
         </div>
-        <button (click)="(disconnectUser())">Logout</button>
+        <button (click)="disconnectUser()">Logout</button>
     </div>
     <div class="debts">
         <h3>Pagamentos pendentes</h3>
@@ -42,16 +51,16 @@
             </div>
             <span class="debt" *ngFor="let debt of debts">
                 <p>
-                    {{debt.title}}
+                    {{ debt.title }}
                 </p>
                 <div class="info">
-                    <p>{{debt.expiration}}</p>
-                    <p>R$ {{debt.value}}</p>
+                    <p>{{ debt.expiration }}</p>
+                    <p>R$ {{ debt.value }}</p>
                 </div>
             </span>
             <span class="totalDebt">
                 <p>Débitos totais</p>
-                <p>R$ {{totalDebt}}</p>
+                <p>R$ {{ totalDebt }}</p>
             </span>
         </div>
         <button>Pagamento</button>

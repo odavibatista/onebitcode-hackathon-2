@@ -1,6 +1,6 @@
 @import '../../../../../../styles.scss';
 
-.card   {
+.card {
     background-color: transparent;
     border: 3px solid $xy;
     color: $xy;
@@ -16,32 +16,32 @@ img {
     border-radius: 18px 18px 0px 0px;
 }
 
-h1  {
+h1 {
     font-family: $rw;
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.monthly    {
+.monthly {
     font-family: $ms;
     font-size: 28px;
     font-weight: bold;
 }
 
-.info   {
+.info {
     display: flex;
     flex-direction: column;
     padding: 10px 45px;
 }
 
-.description    {
+.description {
     color: $ly;
     height: 100px;
     padding: 0px 10px;
 }
 
-button  {
+button {
     align-self: center;
     background-color: transparent;
     border: 3px solid $xy;
@@ -60,26 +60,26 @@ button  {
     }
 }
 
-@media  (max-width: 766px)  {
-    .card   {
+@media (max-width: 766px) {
+    .card {
         margin: 0 auto;
         width: 80%;
     }
 
-    h1  {
+    h1 {
         font-size: 24px;
     }
 
-    .monthly    {
+    .monthly {
         font-size: 20px;
     }
-    
-    .description    {
+
+    .description {
         font-size: 12px;
         height: 55px;
     }
 
-    button  {
+    button {
         font-size: 14px;
         padding: 2px 0px;
     }

@@ -1,6 +1,6 @@
 @import '../../../../styles.scss';
 
-#login  {
+#login {
     animation: fadeIn 0.4s;
     background-color: $dg;
     border-radius: 15px;
@@ -12,166 +12,164 @@
     width: 100%;
 }
 
-#loginForm  {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  width: 100%;
-
-  div {
+#loginForm {
     display: flex;
     flex-direction: column;
-  }
+    gap: 25px;
+    width: 100%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #recovery {
-  color: $ly;
-  font-family: $rw;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 5px;
-  margin-top: 10px;
+    color: $ly;
+    font-family: $rw;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
-h1  {
-  color: $xy;
-  font-family: $rw;
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 10px;
+h1 {
+    color: $xy;
+    font-family: $rw;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 label {
-  color: $ly;
-  font-family: $qs;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+    color: $ly;
+    font-family: $qs;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.errorLabels  {
-  height: 20px;
+.errorLabels {
+    height: 20px;
 }
 
 input {
-  background-color: $lg;
-  border: none;
-  border-radius: 10px;
-  color: $ly;
-  height: 44px;
-  margin-bottom: 0px;
-  outline: none;
-  padding: 5px 15px;
-  width: 100%;
+    background-color: $lg;
+    border: none;
+    border-radius: 10px;
+    color: $ly;
+    height: 44px;
+    margin-bottom: 0px;
+    outline: none;
+    padding: 5px 15px;
+    width: 100%;
 }
 
 #password-error {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.buttonDiv  {
-  margin-top: 40px;
+.buttonDiv {
+    margin-top: 40px;
 }
 
-span, button  {
-  color: $xy;
-  font-family: $rw;
+span,
+button {
+    color: $xy;
+    font-family: $rw;
 }
 
-button  {
-  align-self: center;
-  background: transparent;
-  border: 2px solid $xy;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: 500;
-  height: 29px;
-  transition: 0.3s;
-  margin-top: -15px;
-  margin-bottom: 10px;
-  padding: 0;
-  width: 168px;
+button {
+    align-self: center;
+    background: transparent;
+    border: 2px solid $xy;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 29px;
+    transition: 0.3s;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 168px;
 
-  &:hover {
-    border-color: $ly;
-    color: $ly;
-  }
+    &:hover {
+        border-color: $ly;
+        color: $ly;
+    }
 }
 
 p {
-  align-self: center;
-  color: $ly;
-  font-family: $qs;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-align: center;
+    align-self: center;
+    color: $ly;
+    font-family: $qs;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 img {
-  align-self: center;
-  height: 330px;
-  margin-left: 10px;
-  width: 50px;
+    align-self: center;
+    height: 330px;
+    margin-left: 10px;
+    width: 50px;
 }
 
 .error {
-  border: 1px solid #f64348;
+    border: 1px solid #f64348;
 }
 
 .success {
-  border: 1px solid #43f67f;
+    border: 1px solid #43f67f;
 }
 
+@media (max-width: 991px) {
+    #login {
+        width: 100%;
+    }
 
-@media  (max-width: 991px)  {
-  #login {
-    width: 100%;
-  }
-  
-  #loginForm    {
-    width: 100%;
-  }
+    #loginForm {
+        width: 100%;
+    }
 }
 
-@media  (max-width: 768px)  {
-  h1  {
-    font-size: 24px;
-  }
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
 
-  img{
-    display: none;
-  }
-  
-  input {
-    height: 40px;
-    width: 100%;
-  }
+    img {
+        display: none;
+    }
 
+    input {
+        height: 40px;
+        width: 100%;
+    }
 }
 
-@media  (max-width: 425px)  {
-  .login  {
-    align-items: center;
-    justify-content: center;
-    padding: 5px 20px;
+@media (max-width: 425px) {
+    .login {
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+    }
 
-  }
-
-  #loginForm {
-    justify-content: center;
-    padding: 0;
-  }
-    h1  {
-      font-size: 20px;
-      text-align: center;
+    #loginForm {
+        justify-content: center;
+        padding: 0;
+    }
+    h1 {
+        font-size: 20px;
+        text-align: center;
     }
 
     label {
-      font-size: 12px;
+        font-size: 12px;
     }
-    
+
     input {
-      height: 30px;
+        height: 30px;
     }
 }

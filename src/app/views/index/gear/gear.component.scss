@@ -15,13 +15,13 @@ div {
     width: 50%;
 }
 
-h1  {
+h1 {
     font-family: $ms;
     font-size: 70px;
     font-weight: 700;
 }
 
-a   {
+a {
     border: 2px solid $xy;
     border-radius: 25px;
     display: grid;
@@ -45,38 +45,35 @@ img {
     width: 40%;
 }
 
-.gearDescription   {
+.gearDescription {
     font-family: $rw;
     font-size: 24px;
 }
 
-@media  (max-width: 1366px) {
-    h1  {
+@media (max-width: 1366px) {
+    h1 {
         font-size: 64px;
     }
 
-    a   {
+    a {
         font-size: 16px;
         width: 135px;
     }
 }
 
-@media  (max-width: 1199px) {
-    h1  {
+@media (max-width: 1199px) {
+    h1 {
         font-size: 56px;
     }
-
-
 }
 
-@media  (max-width: 1087px) {
-    h1  {
+@media (max-width: 1087px) {
+    h1 {
         font-size: 48px;
     }
-
 }
 
-@media  (max-width: 991px)  {
+@media (max-width: 991px) {
     section {
         flex-direction: column-reverse;
         gap: 30px;
@@ -93,12 +90,12 @@ img {
         width: 99%;
     }
 
-    h1  {
+    h1 {
         border: none;
         font-size: 36px;
     }
 
-    .gearDescription   {
+    .gearDescription {
         font-size: 18px;
     }
 }

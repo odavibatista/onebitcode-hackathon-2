@@ -1,6 +1,6 @@
 @import '../../../../styles.scss';
 
-.modalDiv   {
+.modalDiv {
     border: 2px solid $xy;
     border-radius: 12px;
     display: flex;
@@ -12,27 +12,26 @@
     &:hover {
         border-color: $ly;
 
-        .modalImg   {
+        .modalImg {
             filter: saturate(0);
         }
 
-        .modalName  {
+        .modalName {
             color: $ly;
         }
 
-        .modalDesc  {
+        .modalDesc {
             color: $ly;
         }
-        
     }
 }
 
-.modalImg   {
+.modalImg {
     border-radius: 10px 10px 0px 0px;
     transition: 0.3s;
 }
 
-.modalName  {
+.modalName {
     color: $xy;
     font-family: $rw;
     font-size: 18px;
@@ -42,7 +41,7 @@
     transition: 0.3s;
 }
 
-.modalDesc  {
+.modalDesc {
     color: $xy;
     font-family: $rw;
     font-size: 14px;

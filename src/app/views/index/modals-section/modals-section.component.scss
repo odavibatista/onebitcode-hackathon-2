@@ -1,6 +1,6 @@
 @import '../../../../styles.scss';
 
-.modalsSection  {
+.modalsSection {
     align-items: center;
     color: $xy;
     display: flex;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-h1  {
+h1 {
     border-bottom: 7px solid $xy;
     font-family: $ms;
     font-size: 64px;
@@ -21,12 +21,12 @@ h1  {
     width: 95%;
 }
 
-p   {
+p {
     font-size: 30px;
     font-family: $qs;
 }
 
-a   {
+a {
     border: 2px solid $xy;
     border-radius: 25px;
     display: grid;
@@ -59,39 +59,37 @@ a   {
     width: 100%;
 }
 
-
-@media  (max-width: 1366px) {
-    a   {
+@media (max-width: 1366px) {
+    a {
         font-size: 16px;
         width: 125px;
     }
 }
 
-
-@media  (max-width: 1199px) {
-    .modalsSection    {
-        h1  {
+@media (max-width: 1199px) {
+    .modalsSection {
+        h1 {
             font-size: 56px;
         }
     }
 }
 
-@media  (max-width: 1087px) {
-    .modalsSection    {
-        h1  {
+@media (max-width: 1087px) {
+    .modalsSection {
+        h1 {
             font-size: 48px;
         }
     }
 }
 
-@media  (max-width: 991px) {
-    .modalsSection    {
-        h1  {
+@media (max-width: 991px) {
+    .modalsSection {
+        h1 {
             border: none;
             font-size: 36px;
         }
     }
-    
+
     .modals {
         display: none;
     }
@@ -101,8 +99,8 @@ a   {
     }
 }
 
-@media  (max-width: 768px)  {
-    .modalsSection   {
+@media (max-width: 768px) {
+    .modalsSection {
         align-items: center;
         flex-direction: column;
         gap: 20px;

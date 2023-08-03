@@ -1,21 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MembershipsComponent } from './memberships.component';
+import { MembershipsComponent } from './memberships.component'
 
 describe('MembershipsComponent', () => {
-  let component: MembershipsComponent;
-  let fixture: ComponentFixture<MembershipsComponent>;
+    let component: MembershipsComponent
+    let fixture: ComponentFixture<MembershipsComponent>
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [MembershipsComponent]
-    });
-    fixture = TestBed.createComponent(MembershipsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            declarations: [MembershipsComponent]
+        })
+        fixture = TestBed.createComponent(MembershipsComponent)
+        component = fixture.componentInstance
+        fixture.detectChanges()
+    })
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    it('should create', () => {
+        expect(component).toBeTruthy()
+    })
+})

@@ -1,10 +1,14 @@
 <section class="section">
     <h1>Alunos <strong>satisfeitos</strong> e <strong>competindo</strong></h1>
     <p>
-        Vidas <strong>transformadas</strong> pelo jeito que guiamos e ensinamos, e que querem te <strong>inspirar</strong>
+        Vidas <strong>transformadas</strong> pelo jeito que guiamos e ensinamos, e que querem te
+        <strong>inspirar</strong>
     </p>
     <div>
-        <app-testimony *ngFor="let testimony of testimonials" [testimony]="testimony"></app-testimony>
+        <app-testimony
+            *ngFor="let testimony of testimonials"
+            [testimony]="testimony"
+        ></app-testimony>
     </div>
     <a routerLink="/testimonies">Saiba mais</a>
 </section>

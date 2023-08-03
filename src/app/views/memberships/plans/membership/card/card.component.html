@@ -1,18 +1,15 @@
 <div class="card">
-    <img src="{{membership.img}}" alt="{{membership.name}}">
+    <img src="{{ membership.img }}" alt="{{ membership.name }}" />
     <div class="info">
-        <h1>{{membership.name}}</h1>
+        <h1>{{ membership.name }}</h1>
         <p class="monthly">
-            R$ <strong>{{membership.monthly}}</strong>/mês
+            R$ <strong>{{ membership.monthly }}</strong
+            >/mês
         </p>
-        <p class="annual">
-            R$ {{membership.annual}}/ano
-        </p>
+        <p class="annual">R$ {{ membership.annual }}/ano</p>
         <p class="description">
-            {{membership.description}}
+            {{ membership.description }}
         </p>
-        <button>
-            Assinar
-        </button>
+        <button>Assinar</button>
     </div>
 </div>

@@ -2,16 +2,15 @@
     <div class="news">
         <h1>Novidades do mês!</h1>
         <span *ngFor="let new of news">
-            <img src="/assets/sign/arrow-right.svg" alt="arrow-right">
-            <p>{{new}}</p>
+            <img src="/assets/sign/arrow-right.svg" alt="arrow-right" />
+            <p>{{ new }}</p>
         </span>
         <div>
-            <img src="/assets/xhealth.png" alt="xhealth-logo" class="newsLogo">
+            <img src="/assets/xhealth.png" alt="xhealth-logo" class="newsLogo" />
         </div>
     </div>
     <div class="forms">
         <app-register></app-register>
         <app-login></app-login>
     </div>
-
 </section>

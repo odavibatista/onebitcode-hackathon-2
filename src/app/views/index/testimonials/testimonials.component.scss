@@ -1,6 +1,6 @@
 @import '../../../../styles.scss';
 
-.section    {
+.section {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -17,14 +17,14 @@ div {
     justify-content: space-between;
 }
 
-h1  {
+h1 {
     color: $xy;
     font-family: $ms;
     font-size: 64px;
     font-weight: 700;
 }
 
-p   {
+p {
     align-self: center;
     color: $xy;
     font-family: $rw;
@@ -33,7 +33,7 @@ p   {
     width: 50%;
 }
 
-a   {
+a {
     border: 2px solid $xy;
     border-radius: 25px;
     display: flex;
@@ -53,14 +53,14 @@ a   {
     }
 }
 
-@media  (max-width: 1366px) {
-    h1  {
+@media (max-width: 1366px) {
+    h1 {
         font-size: 64px;
     }
 }
 
-@media  (max-width: 1199px)  {
-    .section    {
+@media (max-width: 1199px) {
+    .section {
         gap: 30px;
         justify-content: center;
     }
@@ -71,23 +71,23 @@ a   {
         justify-content: center;
     }
 
-    h1  {
+    h1 {
         font-size: 56px;
     }
 
-    p   {
+    p {
         width: 80%;
     }
 }
 
-@media  (max-width: 1087px) {
-    h1  {
+@media (max-width: 1087px) {
+    h1 {
         font-size: 48px;
     }
 }
 
-@media  (max-width: 991px)  {
-    h1  {
+@media (max-width: 991px) {
+    h1 {
         border: none;
         font-size: 36px;
     }

@@ -2,21 +2,20 @@
     <form id="registerForm">
         <h1>Faça parte da XHealth!</h1>
         <label for="name">Nome completo</label>
-        <input type="text" name="name" id="name" maxlength="8">
+        <input type="text" name="name" id="name" maxlength="8" />
         <span id="name-error" class="errorLabels"></span>
         <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="email" />
         <span id="email-error" class="errorLabels"></span>
         <label for="password">Senha</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" />
         <span id="password-error" class="errorLabels"></span>
         <button type="submit">Registrar</button>
         <p>
             Já é membro?
-            <br>
-            Faça seu <a class="linker" (click)="(changeToLogin())">login</a>!
-            
+            <br />
+            Faça seu <a class="linker" (click)="changeToLogin()">login</a>!
         </p>
     </form>
-    <img src="/assets/sign/decoration.png" alt="">
+    <img src="/assets/sign/decoration.png" alt="" />
 </section>

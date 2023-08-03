@@ -1,23 +1,25 @@
 <footer class="footer">
     <div class="footerDivs">
-        <div class="footerIcons" >
-            <img *ngFor="let contact of contacts" src="{{contact.src}}" alt="{{contact.alt}}" class="footerIcon">
+        <div class="footerIcons">
+            <img
+                *ngFor="let contact of contacts"
+                src="{{ contact.src }}"
+                alt="{{ contact.alt }}"
+                class="footerIcon"
+            />
         </div>
-    
-        <a class="footerLink" routerLink="/privacy">
-            Privacidade
-        </a>
-    
-        <a class="footerLink" routerLink="/terms">
-            Termos e Condições
-        </a>
+
+        <a class="footerLink" routerLink="/privacy"> Privacidade </a>
+
+        <a class="footerLink" routerLink="/terms"> Termos e Condições </a>
 
         <a class="footerLink" routerLink="/">
-            <img src="/assets/xhealth.png" alt="xhealth-logo" class="footerLogo">
+            <img src="/assets/xhealth.png" alt="xhealth-logo" class="footerLogo" />
         </a>
-
     </div>
     <p>
-        XHealth Gyms é uma academia fictícia. Seus conteúdos e produtos não estão verdadeiramente à venda, sendo meras demonstrações para o Segundo Hackathon. As imagens neste site foram retiradas  da internet e editadas, portanto, não são autorais.
+        XHealth Gyms é uma academia fictícia. Seus conteúdos e produtos não estão verdadeiramente à
+        venda, sendo meras demonstrações para o Segundo Hackathon. As imagens neste site foram
+        retiradas da internet e editadas, portanto, não são autorais.
     </p>
 </footer>

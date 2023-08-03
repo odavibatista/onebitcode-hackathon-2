@@ -7,15 +7,15 @@ section {
     padding: 70px 0px;
 }
 
-h1  {
+h1 {
     color: $xy;
     font-family: $ms;
     font-weight: bold;
     text-align: center;
 }
 
-@media  (min-width: 768px)  {
-    h1  {
+@media (min-width: 768px) {
+    h1 {
         font-size: 54px;
     }
 }

@@ -1,0 +1,47 @@
+@import '../../../../../styles.scss';
+
+.coach {
+    align-items: center;
+    color: $xy;
+    display: flex;
+    flex-direction: column;
+    font-family: $rw;
+    gap: 13px;
+    text-transform: uppercase;
+    width: 290px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: $ms;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h6,
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 786px) {
+    .coach {
+        gap: 8px;
+    }
+
+    img {
+        width: 220px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h6,
+    p {
+        font-size: 14px;
+    }
+}

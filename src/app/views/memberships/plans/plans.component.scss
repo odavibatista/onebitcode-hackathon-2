@@ -8,49 +8,47 @@ section {
     text-align: center;
 }
 
-h1  {
+h1 {
     font-family: $ms;
     font-size: 64px;
     font-weight: bold;
 }
 
-p   {
+p {
     font-family: $rw;
     font-size: 24px;
     margin: 0 auto;
     width: 50%;
 }
 
-
-@media  (max-width: 1199px) {
-    h1  {
+@media (max-width: 1199px) {
+    h1 {
         font-size: 56px;
     }
 
-    p   {
+    p {
         font-size: 18px;
     }
 }
 
-@media  (max-width: 1087px) {
-    h1  {
+@media (max-width: 1087px) {
+    h1 {
         font-size: 48px;
     }
-
 }
 
-@media  (max-width: 991px)  {
-    h1  {
+@media (max-width: 991px) {
+    h1 {
         font-size: 36px;
     }
 
-    p   {
+    p {
         width: 90%;
     }
 }
 
-@media  (max-width: 768px)  {
-    h1  {
+@media (max-width: 768px) {
+    h1 {
         font-size: 24px;
     }
 }

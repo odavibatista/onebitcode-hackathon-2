@@ -4,12 +4,12 @@
     background-color: $dark;
 }
 
-main    {
+main {
     min-height: 120vh;
     position: relative;
 }
 
-.contact    {
+.contact {
     background-color: $dg;
     border-radius: 50%;
     cursor: pointer;
@@ -22,24 +22,24 @@ main    {
     }
 }
 
-@media  (min-width: 1367px) {
+@media (min-width: 1367px) {
     .main-container {
         padding: 18px 5.5%;
     }
 }
 
-@media  (max-width: 1366px) {
+@media (max-width: 1366px) {
     .main-container {
         padding: 18px 8%;
     }
 }
 
-@media  (max-width: 991px)  {
+@media (max-width: 991px) {
     .main-container {
         padding: 10px 20px;
     }
 
-    .contact    {
+    .contact {
         display: none;
     }
 }
