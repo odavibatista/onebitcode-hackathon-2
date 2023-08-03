@@ -7,14 +7,14 @@ section {
     padding: 70px 5px;
 }
 
-h1  {
+h1 {
     color: $xy;
     font-family: $ms;
     font-size: 64px;
     font-weight: bold;
 }
 
-p   {
+p {
     color: $ly;
     font-family: $rw;
     font-size: 24px;
@@ -23,7 +23,7 @@ p   {
     width: 50%;
 }
 
-.headings   {
+.headings {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -36,7 +36,7 @@ p   {
     gap: 100px;
 }
 
-h2  {
+h2 {
     color: $xy;
     font-family: $ms;
     font-size: 40px;
@@ -45,7 +45,7 @@ h2  {
     text-transform: uppercase;
 }
 
-.flyer  {
+.flyer {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -74,36 +74,36 @@ a {
     }
 }
 
-@media  (max-width: 768px)  {
-    h1  {
+@media (max-width: 768px) {
+    h1 {
         font-size: 48px;
     }
 
-    p   {
+    p {
         font-size: 20px;
         width: 80%;
     }
-    
-    .flyer  {
+
+    .flyer {
         padding: 30px 0px;
     }
 
-    h2  {
+    h2 {
         font-size: 20px;
     }
 
-    a   {
+    a {
         font-size: 20px;
         width: 200px;
     }
 }
 
-@media  (max-width: 425px)  {
-    h1  {
+@media (max-width: 425px) {
+    h1 {
         font-size: 36px;
     }
-    
-    p   {
+
+    p {
         font-size: 18px;
     }
 }

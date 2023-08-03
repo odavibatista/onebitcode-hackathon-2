@@ -34,10 +34,10 @@ import { CoachesComponent } from './views/coaches/coaches.component'
 import { CoachesListComponent } from './views/coaches/coaches-list/coaches-list.component'
 import { SingleCoachComponent } from './views/coaches/coaches-list/single-coach/single-coach.component'
 import { FaqSectionComponent } from './views/contact/faq-section/faq-section.component'
-import { QuestionComponent } from './views/contact/faq-section/question/question.component';
-import { TestimoniesComponent } from './views/testimonies/testimonies.component';
-import { FirstTestimoniesComponent } from './views/testimonies/first-testimonies/first-testimonies.component';
-import { SecondTestimoniesComponent } from './views/testimonies/second-testimonies/second-testimonies.component';
+import { QuestionComponent } from './views/contact/faq-section/question/question.component'
+import { TestimoniesComponent } from './views/testimonies/testimonies.component'
+import { FirstTestimoniesComponent } from './views/testimonies/first-testimonies/first-testimonies.component'
+import { SecondTestimoniesComponent } from './views/testimonies/second-testimonies/second-testimonies.component'
 import { ThirdTestimoniesComponent } from './views/testimonies/third-testimonies/third-testimonies.component'
 
 @NgModule({

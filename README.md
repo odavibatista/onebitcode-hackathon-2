@@ -1,6 +1,6 @@
 # XHealth Gym
 <div align="center">
-  <img src="https://i.imgur.com/NcxApp2.png" width="220" />
+  <img src="https://i.imgur.com/c6m5S2j.png" width="450" />
 </div>
 
 ## 📖 Index
@@ -18,6 +18,7 @@ The project is based on a Single-Page-Application/SPA for the gym's services. It
 
 - Page transitions: The application contains transitions between the routes, in a way of turning its usage smoothier;
 - Register and Login: The sign section contains a button that changes between login and register forms. Both of them are 100% functional, with verifications for the inputs and its values;
+- Responsivity: The project has responsive design on the entire application. Its elements have a progressive pattern to the different breakpoints;
 - Routing: The application uses Angular Router for its alternate pages.
 
 ## ⛏ Used Techs/Services <a name = "techs-used"></a>

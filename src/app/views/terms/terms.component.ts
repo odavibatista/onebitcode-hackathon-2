@@ -6,7 +6,7 @@ import { Component, Output } from '@angular/core'
     styleUrls: ['./terms.component.scss']
 })
 export class TermsComponent {
-    @Output()   terms   =   [
+    @Output() terms = [
         'Para se criar uma conta, é necessário ter 18 anos ou mais. Por isso, para acessar o website e realizar alterações nos dados, os usuários deverão confirmar sua maioridade e se responsabilizar por fornecer informações verdadeiras.',
         'Os preços e descontos oferecidos pelo estabelecimento estão sujeitos a alterações a qualquer momento.',
         'Os usuários autorizam a empresa a utilizar seus dados pessoais para envio de promoções, ofertas e outros fins.',
