@@ -1,0 +1,28 @@
+@import '../../../styles.scss';
+
+section {
+    padding: 70px 5px;
+}
+
+h1  {
+    color: $xy;
+    border-bottom: 1px solid $ly;
+    font-family: $ms;
+    padding-bottom: 6px;
+}
+
+div {
+    padding: 20px 0px;
+}
+
+h2  {
+    color: $ly;
+    border-bottom: 1px solid $ly;
+    font-family: $rw;
+    padding-bottom: 6px;
+}
+
+p   {
+    color: $ly;
+    font-family: $rw;
+}

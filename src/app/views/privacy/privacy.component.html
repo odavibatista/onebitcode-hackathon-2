@@ -1,1 +1,8 @@
-<p>privacy works!</p>
+<section>
+    <h1>xHealth - Política de Privacidade</h1>
+    <p>Nós, da xHealth, valorizamos a privacidade e a segurança de nossos clientes e visitantes. Nossa política de privacidade descreve como lidamos com suas informações pessoais e segurança.</p>
+    <div *ngFor="let politic of politics">
+        <h2>{{politic.title}}</h2>
+        <p>{{politic.text}}</p>
+    </div>
+</section>
