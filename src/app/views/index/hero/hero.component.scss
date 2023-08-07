@@ -106,6 +106,13 @@ a {
     .splide {
         display: flex;
     }
+
+    .heroImage {
+        img {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 768px) {

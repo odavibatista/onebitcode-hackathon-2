@@ -1,10 +1,13 @@
 @import '../../../../styles.scss';
 
 .navigation {
+    align-items: center;
     background-color: $dg;
     border-radius: 35px;
+    display: flex;
     filter: drop-shadow(0px 1px rgba(0, 0, 0, 0.824));
-    height: 60px;
+    height: 80px;
+    justify-content: space-between;
     padding: 0px 25px;
     width: 100%;
     z-index: 100;
@@ -21,18 +24,19 @@
     }
 }
 
-.navbar-nav {
-    gap: 16%;
+.navImage   {
+    width: 115px;
 }
 
-.navImage {
-    width: 78px;
+.navbar-nav {
+    gap: 100px;
+    justify-content: space-evenly;
 }
 
 .nav-link {
     color: $ly;
     font-family: $qs;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
 
     transition: 0.3s;
@@ -43,17 +47,17 @@
 
 .loginButton {
     border: 2px solid $xy;
-    border-radius: 20px;
+    border-radius: 30px;
     color: $xy;
     display: grid;
     font-family: $qs;
-    font-size: 16px;
+    font-size: 22px;
     margin-top: 4px;
     padding: 4px 0px;
     place-content: center;
     text-decoration: none;
     transition: 0.3s;
-    width: 90px;
+    width: 180px;
 
     &:hover {
         border-color: $ly;
@@ -66,13 +70,16 @@
 }
 
 #loginButton {
+    align-self: center;
     margin-left: 15px;
 }
+
+
 
 .userData {
     align-items: center;
     display: flex;
-    gap: 2px;
+    gap: 10px;
     justify-content: center;
     text-decoration: none;
     transition: 0.6s;
@@ -82,10 +89,14 @@
     }
 }
 
+.userImage  {
+    width: 35px;
+}
+
 .nameText {
     color: $xy;
     font-family: $qs;
-    font-size: 18px;
+    font-size: 24px;
     margin: 0;
     text-transform: uppercase;
     width: 80px;
@@ -95,32 +106,116 @@
     background-color: $xy;
 }
 
+.userButton {
+    margin: 0;
+    padding: 0;
+}
+
+@media  (max-width: 1910px) {
+    .navbar-nav {
+        gap: 70px;
+    }
+}
+
+@media  (max-width: 1680px) {
+    .navigation {
+        height: 70px;
+    }
+
+    .navImage   {
+        width: 95px;
+    }
+
+    .navbar-nav {
+        gap: 55px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .userImage  {
+        width: 30px;
+    }
+    
+    .nameText {
+        font-size: 20px;
+    }
+}
+
+@media  (max-width: 1440px) {
+    .navigation {
+        height: 60px;
+    }
+
+    .navbar-nav {
+        gap: 45px;
+    }
+
+    .navImage   {
+        width: 85px;
+    }
+}
+
+
 @media (max-width: 1366px) {
     .navigation {
         padding: 0px 30px;
     }
 
     .navbar-nav {
-        gap: 13%;
+        gap: 40px;
     }
 
     .nav-link {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    .navImage   {
+        width: 75px;
+    }
+
+    .loginButton    {
+        width: 90px;
+    }
+
+    .userImage  {
+        width: 25px;
+    }
+    
+    .nameText {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 1278px) {
     .navbar-nav {
-        gap: 5%;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .navbar-nav {
+        gap: 10px;
     }
 
     .nav-link {
+        font-size: 16px;
+    }
+
+    .userImage  {
+        width: 20px;
+    }
+    
+    .nameText {
         font-size: 16px;
     }
 }
 
 @media (max-width: 991px) {
     .navigation {
+        align-items: center;
         border-radius: 20px;
         height: 55px;
     }
@@ -133,6 +228,10 @@
 
     #loginButton {
         margin: 0;
+    }
+
+    #nav-button {
+        align-self: center;
     }
 
     .navbar-nav {

@@ -11,6 +11,12 @@ export class CardComponent {
         monthly: '',
         annual: '',
         description: '',
-        img: ''
+        img: '',
+        benefits: ['']
+    }
+
+    benefitChange   ()  {
+        localStorage.setItem('membership', JSON.stringify(this.membership))
+        localStorage.setItem('benefits', JSON.stringify(this.membership.benefits))
     }
 }

@@ -1,6 +1,6 @@
 # XHealth Gym
 <div align="center">
-  <img src="https://i.imgur.com/c6m5S2j.png" width="450" />
+  <img src="https://i.imgur.com/MKEjrem.png" width="500" />
 </div>
 
 ## 📖 Index
